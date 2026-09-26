@@ -616,7 +616,7 @@ Anonymous (no API key, no signup): '2 requests per minute, per IP and per model'
 
 ### 🇺🇸 [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fhuggingface-inference-providers.json&cacheSeconds=3600) <sub>live: skipped · docs: broken</sub> <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fhuggingface-inference-providers.json&cacheSeconds=3600) <sub>live: skipped · docs: unknown</sub> <sub>🟡 partial</sub>
 
 > **$0.10/month of Inference Provider credit (tiny; routes to 18 providers)**
 
@@ -844,7 +844,7 @@ Free tier ('Default on signup'): 15 RPM, 20,000 TPM, 20,000 tokens/day. Pricing 
 
 ### 🇬🇧 [LLM7.io](https://llm7.io/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fllm7.json&cacheSeconds=3600) <sub>live: down · docs: unknown</sub> <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fllm7.json&cacheSeconds=3600) <sub>live: up · docs: ok</sub> <sub>🟢 verified</sub>
 
 > **Anonymous 10 RPM / 60 req/h / 500K tokens/day; free token doubles it (40 RPM, 1M tokens/day)**
 
@@ -2263,7 +2263,7 @@ data/providers.json ──▶ scripts/validate.mjs   (schema + sanity checks, ru
 - **Keyed probes** run only when the matching repository secret exists (`GROQ_API_KEY`, `GEMINI_API_KEY`, `MISTRAL_API_KEY`, `COHERE_API_KEY`, `SAMBANOVA_API_KEY`, `NVIDIA_API_KEY`, `HF_TOKEN`, `AION_API_KEY`, `ZAI_API_KEY`, `OLLAMA_API_KEY`, `OPENCODE_API_KEY`, `TAVILY_API_KEY`). Missing secret → badge says *unchecked*, never *down*.
 - **Docs pings** treat 403/429 (bot walls) as *unknown*, not *broken*. Only a 404/410/5xx marks docs as broken.
 - The bot never edits facts. Humans change `providers.json`; the bot only reports.
-- Last run: **2026-09-26 19:49 UTC** — 6 live, 1 down, 6 broken docs.
+- Last run: **2026-09-26 19:56 UTC** — 7 live, 0 down, 4 broken docs.
 
 Run it yourself:
 

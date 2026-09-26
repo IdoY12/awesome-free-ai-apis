@@ -1,42 +1,29 @@
 {
   "summary": {
-    "checked_at": "2026-09-26T19:49:15.660Z",
+    "checked_at": "2026-09-26T19:56:39.038Z",
     "providers": 79,
-    "live_up": 6,
-    "live_down": 1,
-    "docs_broken": 6
+    "live_up": 7,
+    "live_down": 0,
+    "docs_broken": 4
   },
   "results": {
     "cloudflare-workers-ai": {
       "name": "Cloudflare Workers AI",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "unknown",
-        "detail": "HTTP 403 (bot protection)"
+        "detail": "HTTP 403 (login wall or bot protection)"
       },
       "live": {
         "state": "n/a",
         "detail": "no API probe defined (docs check only)"
       }
     },
-    "google-gemini": {
-      "name": "Google Gemini API",
-      "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
-      },
-      "live": {
-        "state": "skipped",
-        "detail": "secret GEMINI_API_KEY not configured"
-      }
-    },
     "openrouter": {
       "name": "OpenRouter (free models)",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -50,7 +37,7 @@
     "groq": {
       "name": "Groq",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -60,10 +47,23 @@
         "detail": "secret GROQ_API_KEY not configured"
       }
     },
+    "google-gemini": {
+      "name": "Google Gemini API",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret GEMINI_API_KEY not configured"
+      }
+    },
     "cohere": {
       "name": "Cohere (Trial key)",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -76,7 +76,7 @@
     "mistral": {
       "name": "Mistral AI (Experiment plan)",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "unknown",
         "detail": "fetch failed"
@@ -89,10 +89,10 @@
     "huggingface-inference-providers": {
       "name": "Hugging Face Inference Providers",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
-        "state": "broken",
-        "detail": "HTTP 401"
+        "state": "unknown",
+        "detail": "HTTP 401 (login wall or bot protection)"
       },
       "live": {
         "state": "skipped",
@@ -102,7 +102,7 @@
     "sambanova": {
       "name": "SambaNova Cloud",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -112,23 +112,10 @@
         "detail": "secret SAMBANOVA_API_KEY not configured"
       }
     },
-    "llm7": {
-      "name": "LLM7.io",
-      "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "unknown",
-        "detail": "Failed to parse URL from https://token.llm7.io (free token raises limits; anonymous works with any placeholder key)"
-      },
-      "live": {
-        "state": "down",
-        "detail": "HTTP 400"
-      }
-    },
     "kilo-gateway": {
       "name": "Kilo Gateway",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "broken",
         "detail": "HTTP 404"
@@ -138,10 +125,24 @@
         "detail": "HTTP 200"
       }
     },
+    "llm7": {
+      "name": "LLM7.io",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "up",
+        "detail": "64 models listed",
+        "models": 64
+      }
+    },
     "ollama-cloud": {
       "name": "Ollama Cloud",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -154,7 +155,7 @@
     "nvidia-nim": {
       "name": "NVIDIA NIM",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -167,20 +168,7 @@
     "vercel-ai-gateway": {
       "name": "Vercel AI Gateway",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
-      },
-      "live": {
-        "state": "n/a",
-        "detail": "no API probe defined (docs check only)"
-      }
-    },
-    "modelscope": {
-      "name": "ModelScope API-Inference (CN)",
-      "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -193,7 +181,7 @@
     "aion-labs": {
       "name": "Aion Labs",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -206,7 +194,7 @@
     "ovhcloud-ai-endpoints": {
       "name": "OVHcloud AI Endpoints",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "broken",
         "detail": "HTTP 404"
@@ -216,10 +204,23 @@
         "detail": "HTTP 429 (rate limited, endpoint alive)"
       }
     },
+    "modelscope": {
+      "name": "ModelScope API-Inference (CN)",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
     "z-ai": {
       "name": "Z.ai (Zhipu GLM Flash)",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "broken",
         "detail": "HTTP 405"
@@ -232,7 +233,7 @@
     "siliconflow": {
       "name": "SiliconFlow (CN)",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -245,7 +246,7 @@
     "opencode-zen": {
       "name": "OpenCode Zen",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "broken",
         "detail": "HTTP 404"
@@ -258,7 +259,7 @@
     "ibm-watsonx-ai": {
       "name": "IBM watsonx.ai (Lite)",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -271,7 +272,7 @@
     "nlp-cloud": {
       "name": "NLP Cloud",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -284,7 +285,7 @@
     "novita": {
       "name": "Novita AI (Ling free models)",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -297,7 +298,7 @@
     "iflytek-spark": {
       "name": "iFlytek Spark Lite (CN)",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -310,7 +311,20 @@
     "baidu-qianfan": {
       "name": "Baidu Qianfan (CN)",
       "category": "text_llm",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "azure-ai-speech": {
+      "name": "Azure AI Speech (F0)",
+      "category": "stt",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -323,10 +337,10 @@
     "huggingface-inference-providers-image": {
       "name": "Hugging Face Inference Providers",
       "category": "image_generation",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
-        "state": "broken",
-        "detail": "HTTP 401"
+        "state": "unknown",
+        "detail": "HTTP 401 (login wall or bot protection)"
       },
       "live": {
         "state": "skipped",
@@ -336,49 +350,10 @@
     "cloudflare-workers-ai-image": {
       "name": "Cloudflare Workers AI (Neurons)",
       "category": "image_generation",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "unknown",
-        "detail": "HTTP 403 (bot protection)"
-      },
-      "live": {
-        "state": "n/a",
-        "detail": "no API probe defined (docs check only)"
-      }
-    },
-    "groq-whisper": {
-      "name": "Groq (Whisper)",
-      "category": "stt",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
-      },
-      "live": {
-        "state": "skipped",
-        "detail": "secret GROQ_API_KEY not configured"
-      }
-    },
-    "azure-ai-speech": {
-      "name": "Azure AI Speech (F0)",
-      "category": "stt",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
-      },
-      "live": {
-        "state": "n/a",
-        "detail": "no API probe defined (docs check only)"
-      }
-    },
-    "google-cloud-speech-to-text": {
-      "name": "Google Cloud Speech-to-Text (V1)",
-      "category": "stt",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
+        "detail": "HTTP 403 (login wall or bot protection)"
       },
       "live": {
         "state": "n/a",
@@ -388,7 +363,7 @@
     "pollinations": {
       "name": "Pollinations.ai",
       "category": "image_generation",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -398,23 +373,10 @@
         "detail": "HTTP 200"
       }
     },
-    "azure-ai-speech-tts": {
-      "name": "Azure AI Speech TTS (F0)",
-      "category": "tts",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
-      },
-      "live": {
-        "state": "n/a",
-        "detail": "no API probe defined (docs check only)"
-      }
-    },
-    "groq-tts": {
-      "name": "Groq (Orpheus TTS)",
-      "category": "tts",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+    "groq-whisper": {
+      "name": "Groq (Whisper)",
+      "category": "stt",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -424,10 +386,23 @@
         "detail": "secret GROQ_API_KEY not configured"
       }
     },
-    "ibm-watson-stt": {
-      "name": "IBM Watson STT (Lite)",
+    "google-cloud-speech-to-text": {
+      "name": "Google Cloud Speech-to-Text (V1)",
       "category": "stt",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "azure-ai-speech-tts": {
+      "name": "Azure AI Speech TTS (F0)",
+      "category": "tts",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -440,7 +415,46 @@
     "elevenlabs-free": {
       "name": "ElevenLabs",
       "category": "tts",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "ibm-watson-stt": {
+      "name": "IBM Watson STT (Lite)",
+      "category": "stt",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "groq-tts": {
+      "name": "Groq (Orpheus TTS)",
+      "category": "tts",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret GROQ_API_KEY not configured"
+      }
+    },
+    "google-cloud-tts": {
+      "name": "Google Cloud Text-to-Speech",
+      "category": "tts",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -453,20 +467,7 @@
     "gemini-api-tts": {
       "name": "Google Gemini API (TTS)",
       "category": "tts",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
-      },
-      "live": {
-        "state": "n/a",
-        "detail": "no API probe defined (docs check only)"
-      }
-    },
-    "google-cloud-tts": {
-      "name": "Google Cloud Text-to-Speech",
-      "category": "tts",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -479,23 +480,10 @@
     "cartesia": {
       "name": "Cartesia",
       "category": "tts",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "unknown",
-        "detail": "HTTP 429 (bot protection)"
-      },
-      "live": {
-        "state": "n/a",
-        "detail": "no API probe defined (docs check only)"
-      }
-    },
-    "gemini-embedding": {
-      "name": "Google Gemini API (embeddings)",
-      "category": "embeddings",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
+        "detail": "HTTP 429 (login wall or bot protection)"
       },
       "live": {
         "state": "n/a",
@@ -505,7 +493,20 @@
     "ibm-watson-tts": {
       "name": "IBM Watson TTS (Lite)",
       "category": "tts",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "gemini-embedding": {
+      "name": "Google Gemini API (embeddings)",
+      "category": "embeddings",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -518,7 +519,7 @@
     "cohere-trial": {
       "name": "Cohere (Trial key)",
       "category": "embeddings",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -531,7 +532,7 @@
     "hume": {
       "name": "Hume AI",
       "category": "tts",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -544,7 +545,7 @@
     "mistral-free": {
       "name": "Mistral AI (embed / OCR / moderation)",
       "category": "embeddings",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "unknown",
         "detail": "fetch failed"
@@ -557,7 +558,7 @@
     "pinecone-inference": {
       "name": "Pinecone Inference",
       "category": "embeddings",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -570,7 +571,7 @@
     "qdrant-cloud": {
       "name": "Qdrant Cloud",
       "category": "vector_db",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -583,20 +584,7 @@
     "pinecone-starter": {
       "name": "Pinecone",
       "category": "vector_db",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
-      },
-      "live": {
-        "state": "n/a",
-        "detail": "no API probe defined (docs check only)"
-      }
-    },
-    "zilliz-cloud": {
-      "name": "Zilliz Cloud (Milvus)",
-      "category": "vector_db",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -609,7 +597,20 @@
     "mongodb-atlas-free": {
       "name": "MongoDB Atlas",
       "category": "vector_db",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "zilliz-cloud": {
+      "name": "Zilliz Cloud (Milvus)",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -622,20 +623,7 @@
     "weaviate-cloud": {
       "name": "Weaviate Cloud",
       "category": "vector_db",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
-      },
-      "live": {
-        "state": "n/a",
-        "detail": "no API probe defined (docs check only)"
-      }
-    },
-    "upstash-vector": {
-      "name": "Upstash Vector",
-      "category": "vector_db",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -648,23 +636,10 @@
     "cloudflare-vectorize": {
       "name": "Cloudflare Vectorize",
       "category": "vector_db",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "unknown",
-        "detail": "HTTP 403 (bot protection)"
-      },
-      "live": {
-        "state": "n/a",
-        "detail": "no API probe defined (docs check only)"
-      }
-    },
-    "redis-cloud-free": {
-      "name": "Redis Cloud",
-      "category": "vector_db",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
+        "detail": "HTTP 403 (login wall or bot protection)"
       },
       "live": {
         "state": "n/a",
@@ -674,7 +649,33 @@
     "supabase-free": {
       "name": "Supabase (pgvector)",
       "category": "vector_db",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "upstash-vector": {
+      "name": "Upstash Vector",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "redis-cloud-free": {
+      "name": "Redis Cloud",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -687,7 +688,7 @@
     "neon-free": {
       "name": "Neon (pgvector)",
       "category": "vector_db",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -700,7 +701,7 @@
     "astra-db-free": {
       "name": "DataStax Astra DB",
       "category": "vector_db",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -713,10 +714,10 @@
     "exa": {
       "name": "Exa",
       "category": "web_search",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "unknown",
-        "detail": "HTTP 429 (bot protection)"
+        "detail": "HTTP 429 (login wall or bot protection)"
       },
       "live": {
         "state": "n/a",
@@ -726,7 +727,7 @@
     "serpapi": {
       "name": "SerpApi",
       "category": "web_search",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -736,23 +737,10 @@
         "detail": "no API probe defined (docs check only)"
       }
     },
-    "jina-reader": {
-      "name": "Jina Reader",
-      "category": "web_search",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
-      },
-      "live": {
-        "state": "up",
-        "detail": "HTTP 200"
-      }
-    },
     "tavily": {
       "name": "Tavily",
       "category": "web_search",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -765,7 +753,7 @@
     "brave-search-api": {
       "name": "Brave Search API",
       "category": "web_search",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -773,25 +761,25 @@
       "live": {
         "state": "n/a",
         "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "jina-reader": {
+      "name": "Jina Reader",
+      "category": "web_search",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "up",
+        "detail": "HTTP 200"
       }
     },
     "firecrawl": {
       "name": "Firecrawl",
       "category": "web_search",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
-      },
-      "live": {
-        "state": "n/a",
-        "detail": "no API probe defined (docs check only)"
-      }
-    },
-    "azure-document-intelligence": {
-      "name": "Azure Document Intelligence (F0)",
-      "category": "ocr_document",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -804,7 +792,7 @@
     "apify": {
       "name": "Apify",
       "category": "web_search",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -814,10 +802,10 @@
         "detail": "no API probe defined (docs check only)"
       }
     },
-    "ocr-space": {
-      "name": "OCR.space",
+    "azure-document-intelligence": {
+      "name": "Azure Document Intelligence (F0)",
       "category": "ocr_document",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -830,7 +818,7 @@
     "you-com": {
       "name": "You.com",
       "category": "web_search",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -843,7 +831,20 @@
     "parallel": {
       "name": "Parallel",
       "category": "web_search",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "ocr-space": {
+      "name": "OCR.space",
+      "category": "ocr_document",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -856,7 +857,20 @@
     "llamaparse": {
       "name": "LlamaParse (LlamaCloud)",
       "category": "ocr_document",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "azure-content-safety": {
+      "name": "Azure Content Safety (F0)",
+      "category": "moderation",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -869,7 +883,7 @@
     "azure-translator": {
       "name": "Azure Translator (F0)",
       "category": "translation",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -882,7 +896,7 @@
     "groq-prompt-guard": {
       "name": "Groq (Llama Prompt Guard 2)",
       "category": "moderation",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -895,23 +909,10 @@
     "openai-moderation": {
       "name": "OpenAI Moderation",
       "category": "moderation",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "unknown",
-        "detail": "HTTP 403 (bot protection)"
-      },
-      "live": {
-        "state": "n/a",
-        "detail": "no API probe defined (docs check only)"
-      }
-    },
-    "azure-content-safety": {
-      "name": "Azure Content Safety (F0)",
-      "category": "moderation",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
+        "detail": "HTTP 403 (login wall or bot protection)"
       },
       "live": {
         "state": "n/a",
@@ -921,7 +922,7 @@
     "google-cloud-translation": {
       "name": "Google Cloud Translation",
       "category": "translation",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -934,10 +935,10 @@
     "mymemory": {
       "name": "MyMemory",
       "category": "translation",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "unknown",
-        "detail": "HTTP 403 (bot protection)"
+        "detail": "HTTP 403 (login wall or bot protection)"
       },
       "live": {
         "state": "up",
@@ -947,20 +948,7 @@
     "azure-ai-vision": {
       "name": "Azure AI Vision (F0)",
       "category": "vision_other",
-      "checked_at": "2026-09-26T19:49:15.660Z",
-      "docs": {
-        "state": "ok",
-        "detail": "HTTP 200"
-      },
-      "live": {
-        "state": "n/a",
-        "detail": "no API probe defined (docs check only)"
-      }
-    },
-    "roboflow": {
-      "name": "Roboflow",
-      "category": "vision_other",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -973,7 +961,20 @@
     "linkup": {
       "name": "Linkup",
       "category": "web_search",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "roboflow": {
+      "name": "Roboflow",
+      "category": "vision_other",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -986,7 +987,7 @@
     "google-cloud-vision": {
       "name": "Google Cloud Vision",
       "category": "vision_other",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -999,7 +1000,7 @@
     "diffbot": {
       "name": "Diffbot",
       "category": "web_search",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
@@ -1012,7 +1013,7 @@
     "clarifai": {
       "name": "Clarifai",
       "category": "vision_other",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "unknown",
         "detail": "fetch failed"
@@ -1025,7 +1026,7 @@
     "datalab": {
       "name": "Datalab (Marker API)",
       "category": "ocr_document",
-      "checked_at": "2026-09-26T19:49:15.660Z",
+      "checked_at": "2026-09-26T19:56:39.038Z",
       "docs": {
         "state": "ok",
         "detail": "HTTP 200"
