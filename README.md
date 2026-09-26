@@ -24,7 +24,7 @@
 | | |
 |:--|:--|
 | 🔬 **Primary sources only** | Every number links to the provider's own rate-limit, pricing or terms page — never a blog, never a screenshot. Each entry shows its *confidence* and *last-verified* date. |
-| 🟢 **Live status, daily** | A GitHub Action calls each API (or pings its docs) every day and turns the badges red when something breaks (first run pending). Keyless endpoints are exercised for real; keyed ones when a secret is configured. |
+| 🟢 **Live status, daily** | A GitHub Action calls each API (or pings its docs) every day and turns the badges red when something breaks. Keyless endpoints are exercised for real; keyed ones when a secret is configured. |
 | 🧾 **The fine print** | Does the free tier **train on your prompts**? Is **commercial use** allowed? Is a **DPA** offered? Where is it **hosted**? That's a column here, not a footnote. |
 | 🧰 **Beyond chat** | 10 more categories a real app needs: image, speech, embeddings, vector DBs, web search, OCR, moderation, translation, vision. |
 | ☠️ **The graveyard** | 69 providers people *think* are free and aren't — retired tiers, one-time credits, paid-only. Checked so you don't have to. |
@@ -117,7 +117,7 @@
 
 ### 🇺🇸 [Google Gemini API](https://ai.google.dev/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fgoogle-gemini.json&cacheSeconds=3600) <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fgoogle-gemini.json&cacheSeconds=3600) <sub>live: skipped · docs: ok</sub> <sub>🟡 partial</sub>
 
 > **Gemini Flash / Flash-Lite family free of charge; per-project limits visible only in AI Studio**
 
@@ -174,7 +174,7 @@ Free usage tier ('Free' usage tier) with per-model RPM/TPM/RPD limits that are n
 
 ### 🇺🇸 [Groq](https://groq.com/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fgroq.json&cacheSeconds=3600) <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fgroq.json&cacheSeconds=3600) <sub>live: skipped · docs: ok</sub> <sub>🟢 verified</sub>
 
 > **30 RPM · 1K RPD · 8K TPM · 200K TPD per model (GPT-OSS 120B/20B, Qwen3.8 27B)**
 
@@ -224,7 +224,7 @@ Free plan with per-model RPM/RPD/TPM/TPD limits; 'Upgrade to Developer plan to a
 
 ### 🇺🇸 [OpenRouter (free models)](https://openrouter.ai/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fopenrouter.json&cacheSeconds=3600) <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fopenrouter.json&cacheSeconds=3600) <sub>live: up · docs: ok</sub> <sub>🟢 verified</sub>
 
 > **All `:free` models: 20 RPM, 50 RPD (1,000 RPD once you have ever bought ≥$10 credit)**
 
@@ -286,7 +286,7 @@ Models with IDs ending in ':free' are $0. Limits: 20 RPM; 50 requests/day if you
 
 ### 🇺🇸 [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fcloudflare-workers-ai.json&cacheSeconds=3600) <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fcloudflare-workers-ai.json&cacheSeconds=3600) <sub>live: n/a · docs: unknown</sub> <sub>🟢 verified</sub>
 
 > **10,000 Neurons/day across all Workers AI models (≈ 300K input tokens of GPT-OSS 120B)**
 
@@ -344,7 +344,7 @@ Models with IDs ending in ':free' are $0. Limits: 20 RPM; 50 requests/day if you
 
 ### 🇫🇷 [Mistral AI (Experiment plan)](https://mistral.ai/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fmistral.json&cacheSeconds=3600) <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fmistral.json&cacheSeconds=3600) <sub>live: skipped · docs: unknown</sub> <sub>🟡 partial</sub>
 
 > **Experiment plan: all models, phone verification, limits shown in console only; trains by default (opt-out)**
 
@@ -400,7 +400,7 @@ Two free paths: (1) Experiment plan — 'You can try Mistral's API for free with
 
 ### 🇨🇦 [Cohere (Trial key)](https://cohere.com/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fcohere.json&cacheSeconds=3600) <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fcohere.json&cacheSeconds=3600) <sub>live: skipped · docs: ok</sub> <sub>🟢 verified</sub>
 
 > **Trial key: 20 RPM chat, 1,000 API calls/month, all Command models**
 
@@ -455,7 +455,7 @@ Two free paths: (1) Experiment plan — 'You can try Mistral's API for free with
 
 ### 🇺🇸 [SambaNova Cloud](https://cloud.sambanova.ai/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fsambanova.json&cacheSeconds=3600) <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fsambanova.json&cacheSeconds=3600) <sub>live: skipped · docs: ok</sub> <sub>🟢 verified</sub>
 
 > **20 RPM · 20 RPD · 200K TPD per model (DeepSeek-V3.x, Llama 3.3 70B, gpt-oss-120b, Gemma 4)**
 
@@ -503,7 +503,7 @@ Rate-limits page still lists a 'Free Tier' with 20 RPM, 20 RPD and 200,000 token
 
 ### 🇫🇷 [OVHcloud AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fovhcloud-ai-endpoints.json&cacheSeconds=3600) <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fovhcloud-ai-endpoints.json&cacheSeconds=3600) <sub>live: up · docs: broken</sub> <sub>🟢 verified</sub>
 
 > **Anonymous: 2 RPM per IP per model, no signup; EU-hosted (Gravelines)**
 
@@ -564,7 +564,7 @@ Anonymous (no API key, no signup): '2 requests per minute, per IP and per model'
 
 ### 🇺🇸 [NVIDIA NIM](https://build.nvidia.com/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fnvidia-nim.json&cacheSeconds=3600) <sub>🟠 community-sourced</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fnvidia-nim.json&cacheSeconds=3600) <sub>live: skipped · docs: ok</sub> <sub>🟠 community-sourced</sub>
 
 > **Free with NVIDIA Developer account; ~40 RPM per staff forum post — limits not officially published**
 
@@ -607,7 +607,7 @@ Anonymous (no API key, no signup): '2 requests per minute, per IP and per model'
 
 ### 🇺🇸 [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fhuggingface-inference-providers.json&cacheSeconds=3600) <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fhuggingface-inference-providers.json&cacheSeconds=3600) <sub>live: skipped · docs: broken</sub> <sub>🟡 partial</sub>
 
 > **$0.10/month of Inference Provider credit (tiny; routes to 18 providers)**
 
@@ -651,7 +651,7 @@ Free users get '$0.10, subject to change' in monthly credits spendable on Infere
 
 ### 🇺🇸 [Ollama Cloud](https://ollama.com/cloud)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Follama-cloud.json&cacheSeconds=3600) <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Follama-cloud.json&cacheSeconds=3600) <sub>live: skipped · docs: ok</sub> <sub>🟡 partial</sub>
 
 > **Free plan: undisclosed monthly "starter" usage, 1 concurrent request, no logging/training**
 
@@ -696,7 +696,7 @@ Free plan: 'Free accounts include a starter amount of usage for a smaller set of
 
 ### 🇨🇳 [Z.ai (Zhipu GLM Flash)](https://z.ai/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fz-ai.json&cacheSeconds=3600) <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fz-ai.json&cacheSeconds=3600) <sub>live: skipped · docs: broken</sub> <sub>🟡 partial</sub>
 
 > **GLM-4.7-Flash, GLM-4.5-Flash, GLM-4.6V-Flash priced Free on the international platform**
 
@@ -743,7 +743,7 @@ Official pricing page lists GLM-4.7-Flash, GLM-4.5-Flash (text) and GLM-4.6V-Fla
 
 ### 🇮🇱 [Aion Labs](https://www.aionlabs.ai/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Faion-labs.json&cacheSeconds=3600) <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Faion-labs.json&cacheSeconds=3600) <sub>live: skipped · docs: ok</sub> <sub>🟢 verified</sub>
 
 > **15 RPM · 20K TPM · 20K tokens/day; Israeli lab, reasoning + roleplay models**
 
@@ -790,7 +790,7 @@ Free tier ('Default on signup'): 15 RPM, 20,000 TPM, 20,000 tokens/day. Pricing 
 
 ### 🇺🇸 [Kilo Gateway](https://kilo.ai/gateway)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fkilo-gateway.json&cacheSeconds=3600) <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fkilo-gateway.json&cacheSeconds=3600) <sub>live: up · docs: broken</sub> <sub>🟢 verified</sub>
 
 > **No key needed: 200 req/hour per IP on `kilo-auto/free` and `:free` models (logged upstream)**
 
@@ -835,7 +835,7 @@ Free tier ('Default on signup'): 15 RPM, 20,000 TPM, 20,000 tokens/day. Pricing 
 
 ### 🇬🇧 [LLM7.io](https://llm7.io/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fllm7.json&cacheSeconds=3600) <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fllm7.json&cacheSeconds=3600) <sub>live: down · docs: unknown</sub> <sub>🟢 verified</sub>
 
 > **Anonymous 10 RPM / 60 req/h / 500K tokens/day; free token doubles it (40 RPM, 1M tokens/day)**
 
@@ -871,7 +871,7 @@ Anonymous: 1 RPS, 10 RPM, 60 requests/hour, 500,000 tokens per 24 hours. Free to
 
 ### 🇺🇸 [OpenCode Zen](https://opencode.ai/zen)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fopencode-zen.json&cacheSeconds=3600) <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fopencode-zen.json&cacheSeconds=3600) <sub>live: skipped · docs: broken</sub> <sub>🟢 verified</sub>
 
 > **Rotating set of free (often stealth/preview) models; limits unpublished; free-period data may train**
 
@@ -908,7 +908,7 @@ Docs list a set of models 'available at no cost': Big Pickle, Space Bunny Free, 
 
 ### 🇺🇸 [Vercel AI Gateway](https://vercel.com/ai-gateway)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fvercel-ai-gateway.json&cacheSeconds=3600) <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fvercel-ai-gateway.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟢 verified</sub>
 
 > **Monthly free credit on Hobby teams (card required); only a few free-tier models**
 
@@ -946,7 +946,7 @@ Docs list a set of models 'available at no cost': Big Pickle, Space Bunny Free, 
 
 ### 🇺🇸 [IBM watsonx.ai (Lite)](https://www.ibm.com/products/watsonx-ai)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fibm-watsonx-ai.json&cacheSeconds=3600) <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fibm-watsonx-ai.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟢 verified</sub>
 
 > **Lite plan: 300,000 tokens/month on Granite + selected models; IBM Cloud regions incl. Frankfurt/London**
 
@@ -977,7 +977,7 @@ Pricing page free plan: 'Foundation Models: Up to 300,000 tokens per month', '20
 
 ### 🇫🇷 [NLP Cloud](https://nlpcloud.com/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fnlp-cloud.json&cacheSeconds=3600) <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fnlp-cloud.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟡 partial</sub>
 
 > **Free plan for testing only ("must not be used in production"); limits unpublished**
 
@@ -1014,7 +1014,7 @@ Pricing page free plan: 'Foundation Models: Up to 300,000 tokens per month', '20
 
 ### 🇸🇬 [Novita AI (Ling free models)](https://novita.ai/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fnovita.json&cacheSeconds=3600) <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fnovita.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟡 partial</sub>
 
 > **inclusionAI Ling 3.0 Flash Fin / Sante priced Free (input + output); 256K context**
 
@@ -1057,7 +1057,7 @@ Official pricing page lists 'Ling 3.0 Flash Fin' and 'Ling 3.0 Flash Sante' (inc
 
 ### 🇨🇳 [SiliconFlow (CN)](https://siliconflow.cn/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fsiliconflow.json&cacheSeconds=3600) <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fsiliconflow.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟡 partial</sub>
 
 > **Older 7B-class models (Qwen2 7B, GLM-4 9B…) free on the .cn platform; ID verification**
 
@@ -1106,7 +1106,7 @@ Docs model list marks seven small open models as free (免费) 'provided they do
 
 ### 🇨🇳 [ModelScope API-Inference (CN)](https://modelscope.cn/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fmodelscope.json&cacheSeconds=3600) <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fmodelscope.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟡 partial</sub>
 
 > **2,000 API calls/day on API-Inference-enabled community models; Alibaba account**
 
@@ -1142,7 +1142,7 @@ ModelScope headline (modelscope.cn/headlines/article/795): registration grants '
 
 ### 🇨🇳 [Baidu Qianfan (CN)](https://cloud.baidu.com/product/qianfan.html)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fbaidu-qianfan.json&cacheSeconds=3600) <sub>🟠 community-sourced</sub> <sub>⚠️ **possibly stale** — official pages could not be re-read</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fbaidu-qianfan.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟠 community-sourced</sub> <sub>⚠️ **possibly stale** — official pages could not be re-read</sub>
 
 > **ERNIE Speed / ERNIE Lite free since 2024; Chinese real-name ID; permanence not re-confirmed**
 
@@ -1180,7 +1180,7 @@ Baidu Cloud article: 'ERNIE Speed and ERNIE Lite 全面免费开放' (fully free
 
 ### 🇨🇳 [iFlytek Spark Lite (CN)](https://xinghuo.xfyun.cn/sparkapi)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fiflytek-spark.json&cacheSeconds=3600) <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fiflytek-spark.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟡 partial</sub>
 
 > **Spark Lite (8K in / 4K out) marked free to use; QPS not published**
 
@@ -2254,7 +2254,7 @@ data/providers.json ──▶ scripts/validate.mjs   (schema + sanity checks, ru
 - **Keyed probes** run only when the matching repository secret exists (`GROQ_API_KEY`, `GEMINI_API_KEY`, `MISTRAL_API_KEY`, `COHERE_API_KEY`, `SAMBANOVA_API_KEY`, `NVIDIA_API_KEY`, `HF_TOKEN`, `AION_API_KEY`, `ZAI_API_KEY`, `OLLAMA_API_KEY`, `OPENCODE_API_KEY`, `TAVILY_API_KEY`). Missing secret → badge says *unchecked*, never *down*.
 - **Docs pings** treat 403/429 (bot walls) as *unknown*, not *broken*. Only a 404/410/5xx marks docs as broken.
 - The bot never edits facts. Humans change `providers.json`; the bot only reports.
-- Last run: **not yet run**.
+- Last run: **2026-09-26 19:49 UTC** — 6 live, 1 down, 6 broken docs.
 
 Run it yourself:
 

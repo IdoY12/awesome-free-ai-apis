@@ -1,0 +1,1039 @@
+{
+  "summary": {
+    "checked_at": "2026-09-26T19:49:15.660Z",
+    "providers": 79,
+    "live_up": 6,
+    "live_down": 1,
+    "docs_broken": 6
+  },
+  "results": {
+    "cloudflare-workers-ai": {
+      "name": "Cloudflare Workers AI",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "unknown",
+        "detail": "HTTP 403 (bot protection)"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "google-gemini": {
+      "name": "Google Gemini API",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret GEMINI_API_KEY not configured"
+      }
+    },
+    "openrouter": {
+      "name": "OpenRouter (free models)",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "up",
+        "detail": "17 models matching \":free\"",
+        "models": 17
+      }
+    },
+    "groq": {
+      "name": "Groq",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret GROQ_API_KEY not configured"
+      }
+    },
+    "cohere": {
+      "name": "Cohere (Trial key)",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret COHERE_API_KEY not configured"
+      }
+    },
+    "mistral": {
+      "name": "Mistral AI (Experiment plan)",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "unknown",
+        "detail": "fetch failed"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret MISTRAL_API_KEY not configured"
+      }
+    },
+    "huggingface-inference-providers": {
+      "name": "Hugging Face Inference Providers",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "broken",
+        "detail": "HTTP 401"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret HF_TOKEN not configured"
+      }
+    },
+    "sambanova": {
+      "name": "SambaNova Cloud",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret SAMBANOVA_API_KEY not configured"
+      }
+    },
+    "llm7": {
+      "name": "LLM7.io",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "unknown",
+        "detail": "Failed to parse URL from https://token.llm7.io (free token raises limits; anonymous works with any placeholder key)"
+      },
+      "live": {
+        "state": "down",
+        "detail": "HTTP 400"
+      }
+    },
+    "kilo-gateway": {
+      "name": "Kilo Gateway",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "broken",
+        "detail": "HTTP 404"
+      },
+      "live": {
+        "state": "up",
+        "detail": "HTTP 200"
+      }
+    },
+    "ollama-cloud": {
+      "name": "Ollama Cloud",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret OLLAMA_API_KEY not configured"
+      }
+    },
+    "nvidia-nim": {
+      "name": "NVIDIA NIM",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret NVIDIA_API_KEY not configured"
+      }
+    },
+    "vercel-ai-gateway": {
+      "name": "Vercel AI Gateway",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "modelscope": {
+      "name": "ModelScope API-Inference (CN)",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "aion-labs": {
+      "name": "Aion Labs",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret AION_API_KEY not configured"
+      }
+    },
+    "ovhcloud-ai-endpoints": {
+      "name": "OVHcloud AI Endpoints",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "broken",
+        "detail": "HTTP 404"
+      },
+      "live": {
+        "state": "up",
+        "detail": "HTTP 429 (rate limited, endpoint alive)"
+      }
+    },
+    "z-ai": {
+      "name": "Z.ai (Zhipu GLM Flash)",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "broken",
+        "detail": "HTTP 405"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret ZAI_API_KEY not configured"
+      }
+    },
+    "siliconflow": {
+      "name": "SiliconFlow (CN)",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "opencode-zen": {
+      "name": "OpenCode Zen",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "broken",
+        "detail": "HTTP 404"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret OPENCODE_API_KEY not configured"
+      }
+    },
+    "ibm-watsonx-ai": {
+      "name": "IBM watsonx.ai (Lite)",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "nlp-cloud": {
+      "name": "NLP Cloud",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "novita": {
+      "name": "Novita AI (Ling free models)",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "iflytek-spark": {
+      "name": "iFlytek Spark Lite (CN)",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "baidu-qianfan": {
+      "name": "Baidu Qianfan (CN)",
+      "category": "text_llm",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "huggingface-inference-providers-image": {
+      "name": "Hugging Face Inference Providers",
+      "category": "image_generation",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "broken",
+        "detail": "HTTP 401"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret HF_TOKEN not configured"
+      }
+    },
+    "cloudflare-workers-ai-image": {
+      "name": "Cloudflare Workers AI (Neurons)",
+      "category": "image_generation",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "unknown",
+        "detail": "HTTP 403 (bot protection)"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "groq-whisper": {
+      "name": "Groq (Whisper)",
+      "category": "stt",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret GROQ_API_KEY not configured"
+      }
+    },
+    "azure-ai-speech": {
+      "name": "Azure AI Speech (F0)",
+      "category": "stt",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "google-cloud-speech-to-text": {
+      "name": "Google Cloud Speech-to-Text (V1)",
+      "category": "stt",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "pollinations": {
+      "name": "Pollinations.ai",
+      "category": "image_generation",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "up",
+        "detail": "HTTP 200"
+      }
+    },
+    "azure-ai-speech-tts": {
+      "name": "Azure AI Speech TTS (F0)",
+      "category": "tts",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "groq-tts": {
+      "name": "Groq (Orpheus TTS)",
+      "category": "tts",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret GROQ_API_KEY not configured"
+      }
+    },
+    "ibm-watson-stt": {
+      "name": "IBM Watson STT (Lite)",
+      "category": "stt",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "elevenlabs-free": {
+      "name": "ElevenLabs",
+      "category": "tts",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "gemini-api-tts": {
+      "name": "Google Gemini API (TTS)",
+      "category": "tts",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "google-cloud-tts": {
+      "name": "Google Cloud Text-to-Speech",
+      "category": "tts",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "cartesia": {
+      "name": "Cartesia",
+      "category": "tts",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "unknown",
+        "detail": "HTTP 429 (bot protection)"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "gemini-embedding": {
+      "name": "Google Gemini API (embeddings)",
+      "category": "embeddings",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "ibm-watson-tts": {
+      "name": "IBM Watson TTS (Lite)",
+      "category": "tts",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "cohere-trial": {
+      "name": "Cohere (Trial key)",
+      "category": "embeddings",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret COHERE_API_KEY not configured"
+      }
+    },
+    "hume": {
+      "name": "Hume AI",
+      "category": "tts",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "mistral-free": {
+      "name": "Mistral AI (embed / OCR / moderation)",
+      "category": "embeddings",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "unknown",
+        "detail": "fetch failed"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "pinecone-inference": {
+      "name": "Pinecone Inference",
+      "category": "embeddings",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "qdrant-cloud": {
+      "name": "Qdrant Cloud",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "pinecone-starter": {
+      "name": "Pinecone",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "zilliz-cloud": {
+      "name": "Zilliz Cloud (Milvus)",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "mongodb-atlas-free": {
+      "name": "MongoDB Atlas",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "weaviate-cloud": {
+      "name": "Weaviate Cloud",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "upstash-vector": {
+      "name": "Upstash Vector",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "cloudflare-vectorize": {
+      "name": "Cloudflare Vectorize",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "unknown",
+        "detail": "HTTP 403 (bot protection)"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "redis-cloud-free": {
+      "name": "Redis Cloud",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "supabase-free": {
+      "name": "Supabase (pgvector)",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "neon-free": {
+      "name": "Neon (pgvector)",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "astra-db-free": {
+      "name": "DataStax Astra DB",
+      "category": "vector_db",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "exa": {
+      "name": "Exa",
+      "category": "web_search",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "unknown",
+        "detail": "HTTP 429 (bot protection)"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "serpapi": {
+      "name": "SerpApi",
+      "category": "web_search",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "jina-reader": {
+      "name": "Jina Reader",
+      "category": "web_search",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "up",
+        "detail": "HTTP 200"
+      }
+    },
+    "tavily": {
+      "name": "Tavily",
+      "category": "web_search",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret TAVILY_API_KEY not configured"
+      }
+    },
+    "brave-search-api": {
+      "name": "Brave Search API",
+      "category": "web_search",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "firecrawl": {
+      "name": "Firecrawl",
+      "category": "web_search",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "azure-document-intelligence": {
+      "name": "Azure Document Intelligence (F0)",
+      "category": "ocr_document",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "apify": {
+      "name": "Apify",
+      "category": "web_search",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "ocr-space": {
+      "name": "OCR.space",
+      "category": "ocr_document",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "you-com": {
+      "name": "You.com",
+      "category": "web_search",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "parallel": {
+      "name": "Parallel",
+      "category": "web_search",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "llamaparse": {
+      "name": "LlamaParse (LlamaCloud)",
+      "category": "ocr_document",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "azure-translator": {
+      "name": "Azure Translator (F0)",
+      "category": "translation",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "groq-prompt-guard": {
+      "name": "Groq (Llama Prompt Guard 2)",
+      "category": "moderation",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "skipped",
+        "detail": "secret GROQ_API_KEY not configured"
+      }
+    },
+    "openai-moderation": {
+      "name": "OpenAI Moderation",
+      "category": "moderation",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "unknown",
+        "detail": "HTTP 403 (bot protection)"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "azure-content-safety": {
+      "name": "Azure Content Safety (F0)",
+      "category": "moderation",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "google-cloud-translation": {
+      "name": "Google Cloud Translation",
+      "category": "translation",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "mymemory": {
+      "name": "MyMemory",
+      "category": "translation",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "unknown",
+        "detail": "HTTP 403 (bot protection)"
+      },
+      "live": {
+        "state": "up",
+        "detail": "HTTP 200"
+      }
+    },
+    "azure-ai-vision": {
+      "name": "Azure AI Vision (F0)",
+      "category": "vision_other",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "roboflow": {
+      "name": "Roboflow",
+      "category": "vision_other",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "linkup": {
+      "name": "Linkup",
+      "category": "web_search",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "google-cloud-vision": {
+      "name": "Google Cloud Vision",
+      "category": "vision_other",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "diffbot": {
+      "name": "Diffbot",
+      "category": "web_search",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "clarifai": {
+      "name": "Clarifai",
+      "category": "vision_other",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "unknown",
+        "detail": "fetch failed"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    },
+    "datalab": {
+      "name": "Datalab (Marker API)",
+      "category": "ocr_document",
+      "checked_at": "2026-09-26T19:49:15.660Z",
+      "docs": {
+        "state": "ok",
+        "detail": "HTTP 200"
+      },
+      "live": {
+        "state": "n/a",
+        "detail": "no API probe defined (docs check only)"
+      }
+    }
+  }
+}
