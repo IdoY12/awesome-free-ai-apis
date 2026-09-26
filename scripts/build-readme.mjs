@@ -200,24 +200,33 @@ const checked = status ? new Date(status.summary.checked_at).toISOString().slice
 /* ---------- README ---------- */
 const md = `<div align="center">
 
-<img src="media/banner.svg" alt="Awesome Free AI APIs" width="100%">
+<a href="https://github.com/${REPO}"><img src="media/banner.svg" alt="Awesome Free AI APIs" width="100%"></a>
 
 <br>
 
 **Every AI API with a *permanent* free tier — verified against official docs, re-checked daily, with the data-policy fine print nobody else lists.**
 
+<br>
+
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 ![Providers](https://img.shields.io/badge/providers-${data.providers.length}-8b5cf6?style=flat-square)
 ![Categories](https://img.shields.io/badge/categories-${CATEGORIES.length}-6366f1?style=flat-square)
+![Graveyard](https://img.shields.io/badge/graveyard-${data.graveyard.length}-64748b?style=flat-square)
 ![Reviewed](https://img.shields.io/badge/full%20review-${data.meta.last_full_review.replace(/-/g, "--")}-0ea5e9?style=flat-square)
 [![Live checks](https://img.shields.io/endpoint?url=${encodeURIComponent(`${RAW}/badges/_summary.json`)}&style=flat-square)](data/status.json)
 [![Verify](https://github.com/${REPO}/actions/workflows/verify.yml/badge.svg)](https://github.com/${REPO}/actions/workflows/verify.yml)
 [![License: CC0](https://img.shields.io/badge/license-CC0--1.0-lightgrey?style=flat-square)](LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square)](CONTRIBUTING.md)
+[![GitHub stars](https://img.shields.io/github/stars/${REPO}?style=flat-square&color=f59e0b)](https://github.com/${REPO}/stargazers)
+
+<sub>If this saves you a signup or a surprise bill, a ⭐ helps others find it.</sub>
 
 </div>
 
----
+\`\`\`text
+$ curl -s ${RAW}/data/providers.json | jq '.providers[] | select(.free_tier.api_key_required == false) | .name'
+"Kilo Gateway"  "LLM7.io"  "OVHcloud AI Endpoints"  "Pollinations.ai"  "Jina Reader"  "MyMemory"
+\`\`\`
 
 ## Why this list is different
 
@@ -335,11 +344,27 @@ npm run build      # regenerate README.md
 
 Know a permanent free tier we missed, or spotted a limit that changed? See [CONTRIBUTING.md](CONTRIBUTING.md). The bar is simple: **link the official page that states the number.** Trial credits and time-limited promos belong in the Graveyard, not the list.
 
+## 🔗 Related lists
+
+Lists that overlap with this one and are worth a look. This project is an independent, from-scratch dataset; none of them were copied.
+
+- [mnfst/awesome-free-llm-apis](https://github.com/mnfst/awesome-free-llm-apis) — text-LLM free tiers, compact single table.
+- [cheahjs/free-llm-api-resources](https://github.com/cheahjs/free-llm-api-resources) — long-running list of free and trial LLM APIs.
+- [sindresorhus/awesome](https://github.com/sindresorhus/awesome) — the index of awesome lists.
+
+## ⭐ Star history
+
+<a href="https://star-history.com/#${REPO}&Date"><img src="https://api.star-history.com/svg?repos=${REPO}&type=Date" alt="Star history" width="600"></a>
+
+## 👥 Contributors
+
+<a href="https://github.com/${REPO}/graphs/contributors"><img src="https://contrib.rocks/image?repo=${REPO}" alt="Contributors"></a>
+
 ## License
 
-[CC0 1.0](LICENSE) — public domain. Copy, fork, remix. Provider names and logos belong to their owners.
+[CC0 1.0](LICENSE) — public domain. Copy, fork, remix. Provider names belong to their owners; this project is not affiliated with or endorsed by any of them.
 
-<div align="center"><sub>Built and maintained by <a href="https://github.com/IdoY12">Ido Yahav</a>. Not affiliated with any provider listed. Data is best-effort — always confirm limits in your own console before you depend on them.</sub></div>
+<div align="center"><sub>Made in Israel 🇮🇱 by <a href="https://github.com/IdoY12">Ido Yahav</a>. Data is best-effort — always confirm limits in your own console before you depend on them.</sub></div>
 `;
 
 writeFileSync(join(root, "README.md"), md.replace(/\n{3,}/g, "\n\n"));
