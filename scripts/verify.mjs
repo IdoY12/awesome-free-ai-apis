@@ -49,7 +49,7 @@ async function checkDocs(url) {
     let res = await fetchWithTimeout(url, { method: "HEAD", redirect: "follow" });
     if (res.status === 405 || res.status === 403 || res.status === 404) res = await fetchWithTimeout(url, { method: "GET", redirect: "follow" });
     // Bot walls (403/429) are not evidence the page is gone — report as unknown, not broken.
-    if (res.status === 403 || res.status === 429) return { state: "unknown", detail: `HTTP ${res.status} (bot protection)` };
+    if ([401, 403, 429].includes(res.status)) return { state: "unknown", detail: `HTTP ${res.status} (login wall or bot protection)` };
     return res.ok ? { state: "ok", detail: `HTTP ${res.status}` } : { state: "broken", detail: `HTTP ${res.status}` };
   } catch (e) {
     return { state: "unknown", detail: e.name === "AbortError" ? "timeout" : String(e.message || e) };

@@ -1818,11 +1818,10 @@
       "last_verified": "2026-09-26",
       "confidence": "verified",
       "probe": {
-        "type": "openai_chat",
-        "url": "https://api.llm7.io/v1",
+        "type": "openai_models",
+        "url": "https://api.llm7.io/v1/models",
         "auth": "none",
-        "model": "gpt-oss:20b",
-        "docs_url": "https://token.llm7.io (free token raises limits; anonymous works with any placeholder key)"
+        "docs_url": "https://docs.llm7.io/limits"
       },
       "region": "Varies (upstream)"
     },
