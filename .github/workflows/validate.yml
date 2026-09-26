@@ -1,0 +1,39 @@
+name: validate
+
+on:
+  pull_request:
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - "README.md"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Schema + sanity checks
+        run: node scripts/validate.mjs
+
+      - name: README is generated from data
+        run: |
+          node scripts/build-readme.mjs
+          if ! git diff --quiet -- README.md; then
+            echo "::error::README.md is out of date. Run 'npm run build' and commit the result."
+            git --no-pager diff --stat -- README.md
+            exit 1
+          fi
+
+      - name: Every source URL is well-formed
+        run: |
+          node -e '
+            const d = JSON.parse(require("fs").readFileSync("data/providers.json","utf8"));
+            const bad = [];
+            for (const p of d.providers) for (const s of p.sources) { try { new URL(s.url); } catch { bad.push(p.id + ": " + s.url); } }
+            if (bad.length) { console.error(bad.join("\n")); process.exit(1); }
+            console.log("all source URLs parse");
+          '
