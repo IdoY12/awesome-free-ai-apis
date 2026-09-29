@@ -2241,7 +2241,7 @@ data/providers.json ──▶ scripts/validate.mjs   (schema + sanity checks, ru
 - **Keyed probes** run only when the matching repository secret exists (`GROQ_API_KEY`, `GEMINI_API_KEY`, `MISTRAL_API_KEY`, `COHERE_API_KEY`, `SAMBANOVA_API_KEY`, `NVIDIA_API_KEY`, `HF_TOKEN`, `AION_API_KEY`, `ZAI_API_KEY`, `OLLAMA_API_KEY`, `OPENCODE_API_KEY`, `TAVILY_API_KEY`). Missing secret → badge says *unchecked*, never *down*.
 - **Docs pings** treat 403/429 (bot walls) as *unknown*, not *broken*. Only a 404/410/5xx marks docs as broken.
 - The bot never edits facts. Humans change `providers.json`; the bot only reports.
-- Last run: **2026-09-29 10:45 UTC** — 7 live, 0 down, 4 broken docs.
+- Last run: **2026-09-29 15:57 UTC** — 7 live, 0 down, 4 broken docs.
 
 Run it yourself:
 
