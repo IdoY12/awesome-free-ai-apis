@@ -163,11 +163,7 @@ Free usage tier ('Free' usage tier) with per-model RPM/TPM/RPD limits that are n
 
 **Model notes**
 - **Gemini 3.8 Flash:** Free of charge on free tier; 'Used to improve our products: Yes'.
-- **Gemini 3.7 Flash:** Free of charge on free tier.
-- **Gemini 3.6 Flash:** Free of charge on free tier.
 - **Gemini 3.5 Flash:** '1M token context window, 65k max output tokens' (whats-new page). Free of charge on free tier.
-- **Gemini 3.5 Flash-Lite:** Free of charge on free tier.
-- **Gemini 3.1 Flash-Lite:** Free of charge on free tier.
 - **Gemini 3 Flash Preview:** Preview; free of charge on free tier.
 
 **Official sources**
@@ -216,7 +212,6 @@ Free plan with per-model RPM/RPD/TPM/TPD limits; 'Upgrade to Developer plan to a
 
 **Model notes**
 - **GPT-OSS 120B:** Production. Tool Use, Browser Search, Code Execution, JSON Object Mode, JSON Schema Mode, Reasoning.
-- **GPT-OSS 20B:** Production.
 - **GPT-OSS Safeguard 20B:** Preview; safety classifier.
 - **Qwen3.8 27B:** Preview. Tool Use, JSON Object Mode, JSON Schema Mode, Reasoning, Vision.
 
@@ -495,13 +490,6 @@ Rate-limits page still lists a 'Free Tier' with 20 RPM, 20 RPD and 200,000 token
 - **Hosting:** US ('As SambaNova is located in the United States, your Personal Information needs to be transferred to the United States')
 - **Notes:** Only 20 requests/day per model — effectively a smoke-test tier. Some third-party lists claim SambaNova discontinued free access; the official rate-limit page still documents the Free tier rows as of today, so it is included with that caveat. MiniMax-M2.7 is Developer-tier only.
 
-**Model notes**
-- **DeepSeek-V3.1:** Production.
-- **Meta-Llama-3.3-70B-Instruct:** Production.
-- **gpt-oss-120b:** Production.
-- **DeepSeek-V3.2 (preview):** Preview.
-- **Gemma 4 31B IT (preview):** Preview.
-
 **Official sources**
 - [Rate limits policy](https://docs.sambanova.ai/docs/en/models/rate-limits) <sub>2026-09-26</sub>
 - [Developer tier launch blog ($5 credit expires in 3 months — separate from the Free tier rows)](https://sambanova.ai/blog/sambanova-cloud-developer-tier-is-live) <sub>2026-09-26</sub>
@@ -738,7 +726,6 @@ Official pricing page lists GLM-4.7-Flash, GLM-4.5-Flash (text) and GLM-4.6V-Fla
 
 **Model notes**
 - **GLM-4.7-Flash:** Free. (Cloudflare's copy documents 131,072 context + function calling + reasoning; Z.ai model page returned 404 to the fetcher.)
-- **GLM-4.5-Flash:** Free.
 - **GLM-4.6V-Flash:** Free (vision).
 
 **Official sources**
@@ -1096,15 +1083,6 @@ Docs model list marks seven small open models as free (免费) 'provided they do
 - **Commercial use:** 'the company retains interpretation rights regarding the free model offerings'.
 - **Hosting:** China
 - **Notes:** Change vs. earlier lists: the '1,000 RPM / 50,000 TPM for free models' figure is not on the fetched rate-limit page (those are L0/L1 paid-tier numbers). Free models are old-generation (Qwen2, GLM-4-9B). The docs model-list page may be stale; re-check cloud.siliconflow.cn/models. International site: https://siliconflow.com/ (lists no free models).
-
-**Model notes**
-- **Qwen2 7B Instruct:** Free.
-- **Qwen2 1.5B Instruct:** Free.
-- **Qwen1.5 7B Chat:** Free.
-- **GLM-4 9B Chat:** Free.
-- **ChatGLM3 6B:** Free.
-- **InternLM2.5 7B Chat:** Free.
-- **Mistral 7B Instruct v0.2:** Free.
 
 **Official sources**
 - [SiliconFlow model list (free models marked 免费)](https://docs.siliconflow.com/quickstart/models) <sub>2026-09-26</sub>

@@ -93,7 +93,11 @@ function details(p) {
   if (p.hosting_regions) notes.push(`- **Hosting:** ${esc(p.hosting_regions)}`);
   if (p.base_url_note) notes.push(`- **Alt endpoint:** ${esc(p.base_url_note)}`);
   if (p.notes) notes.push(`- **Notes:** ${esc(p.notes)}`);
-  const models = (p.models || []).filter((m) => m.notes).map((m) => `- **${esc(m.name)}:** ${esc(m.notes)}`);
+  // Skip boilerplate model notes ("Free.", "Free of charge on free tier.") — the model table already says it's free.
+  const boilerplate = /^(free|free of charge|free of charge on free tier|production|preview)\.?$/i;
+  const models = (p.models || [])
+    .filter((m) => m.notes && !boilerplate.test(m.notes.trim()))
+    .map((m) => `- **${esc(m.name)}:** ${esc(m.notes)}`);
   const srcs = p.sources.filter((s) => s.url).map((s) => `- [${esc(s.title || s.url)}](${s.url})${s.accessed ? ` <sub>${s.accessed}</sub>` : ""}`);
   return [
     "<details><summary><b>Notes &amp; sources</b> · last verified " + p.last_verified + "</summary>",
