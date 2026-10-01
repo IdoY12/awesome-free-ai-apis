@@ -7129,7 +7129,13 @@
       "category": "image_generation",
       "status": "never_free",
       "reason": "Free tier listed as 'Not available' for image generation models.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Gemini Developer API pricing",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7138,7 +7144,13 @@
       "category": "image_generation",
       "status": "never_free",
       "reason": "Model page says 'not available on Together's Serverless API' / 'Launching soon'; only free serverless model is a chat model (Prism-ML/Ternary-Bonsai-27B).",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Together AI docs: Deprecations",
+          "url": "https://docs.together.ai/docs/deprecations",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7147,7 +7159,13 @@
       "category": "image_generation",
       "status": "trial_only",
       "reason": "Free only 'for a limited number of runs', then billing required (one-time).",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Replicate: Try for free collection",
+          "url": "https://replicate.com/collections/try-for-free",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7192,7 +7210,13 @@
       "category": "stt",
       "status": "trial_only",
       "reason": "$200 credit with 'No expiration' and 'No credit card required' but it is a one-time signup credit, not recurring. Borderline - consider a separate 'one-time credits' section.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Deepgram pricing",
+          "url": "https://deepgram.com/pricing",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7201,7 +7225,13 @@
       "category": "stt",
       "status": "trial_only",
       "reason": "'up to 185 hours pre-recorded / 333 hours streaming' free with no reset period stated; consistent with a one-time $50 credit.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "AssemblyAI docs: billing and pricing FAQ",
+          "url": "https://www.assemblyai.com/docs/faq/what-happens-when-i-have-used-all-of-my-free-tier-credits",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7210,7 +7240,13 @@
       "category": "stt",
       "status": "trial_only",
       "reason": "Pricing page: '50 EUR in free credits, a one-time grant with no monthly reset' (their blog claims 10 free hours/month - contradicted by pricing page).",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Gladia pricing",
+          "url": "https://www.gladia.io/pricing",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7219,7 +7255,13 @@
       "category": "stt",
       "status": "trial_only",
       "reason": "'$100 credit to get started' one-time; no monthly allowance stated.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Speechmatics pricing",
+          "url": "https://www.speechmatics.com/pricing",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7228,7 +7270,13 @@
       "category": "stt",
       "status": "trial_only",
       "reason": "One-time free credits 'equivalent to 5 hours of Reverb ASR'.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Rev AI pricing",
+          "url": "https://www.rev.ai/pricing",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7237,7 +7285,13 @@
       "category": "stt",
       "status": "never_free",
       "reason": "AWS free tier is 12 months only",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Amazon Transcribe pricing",
+          "url": "https://aws.amazon.com/transcribe/pricing/",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7246,7 +7300,13 @@
       "category": "tts",
       "status": "never_free",
       "reason": "$0 API model but 'Free access is available through November 30, 2026' (time-limited promo); requests may be used to improve models.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Fish Audio blog: S2.1 Pro free API",
+          "url": "https://fish.audio/blog/s2-1-pro-free-api/",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7264,7 +7324,13 @@
       "category": "tts",
       "status": "never_free",
       "reason": "Unofficial/undocumented Microsoft endpoint; no official free tier - flag only.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "rany2/edge-tts README",
+          "url": "https://github.com/rany2/edge-tts",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7282,7 +7348,13 @@
       "category": "embeddings",
       "status": "trial_only",
       "reason": "'Every new API key comes with 10M free tokens' (one-time); no key = blocked.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Jina AI Reader API",
+          "url": "https://jina.ai/reader/",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7291,7 +7363,13 @@
       "category": "embeddings",
       "status": "trial_only",
       "reason": "'$5 one-time credits', no card required; not recurring.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Mixedbread pricing",
+          "url": "https://www.mixedbread.com/pricing",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7300,7 +7378,13 @@
       "category": "embeddings",
       "status": "never_free",
       "reason": "No free embedding-API allowance found on official pricing/docs (Free plan = 'limited agent requests').",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Nomic pricing",
+          "url": "https://www.nomic.ai/pricing",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7318,7 +7402,13 @@
       "category": "vector_db",
       "status": "never_free",
       "reason": "No free tier; Launch plan from $16/month.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "turbopuffer pricing",
+          "url": "https://turbopuffer.com/pricing",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7336,7 +7426,13 @@
       "category": "web_search",
       "status": "retired",
       "reason": "100 queries/day free but 'closed to new customers' and discontinued January 1, 2027.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Custom Search JSON API: Overview",
+          "url": "https://developers.google.com/custom-search/v1/overview",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7345,7 +7441,13 @@
       "category": "web_search",
       "status": "retired",
       "reason": "Bing Search APIs were retired in August 2025.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Microsoft Lifecycle: Bing Search APIs retirement",
+          "url": "https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7354,7 +7456,13 @@
       "category": "ocr_document",
       "status": "trial_only",
       "reason": "'10,000 free pages to start' one-time, no card.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Unstructured pricing",
+          "url": "https://unstructured.io/pricing",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7363,7 +7471,13 @@
       "category": "ocr_document",
       "status": "never_free",
       "reason": "No free monthly allowance; billed from first page.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Document AI pricing",
+          "url": "https://cloud.google.com/document-ai/pricing",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7372,7 +7486,13 @@
       "category": "ocr_document",
       "status": "never_free",
       "reason": "No API free tier on pricing page (only 10 free Studio agent runs).",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Upstage pricing",
+          "url": "https://www.upstage.ai/pricing",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7381,7 +7501,13 @@
       "category": "moderation",
       "status": "retired",
       "reason": "'Perspective API is sunsetting and service is officially ending after 2026' (active until Dec 31, 2026).",
-      "sources": [],
+      "sources": [
+        {
+          "title": "Perspective API",
+          "url": "https://perspectiveapi.com/",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7390,7 +7516,13 @@
       "category": "translation",
       "status": "retired",
       "reason": "'The DeepL API Free plan can no longer be purchased'; replacement 'DeepL API Developer' gives 1,000,000 characters in total (one-time).",
-      "sources": [],
+      "sources": [
+        {
+          "title": "DeepL Help Center: DeepL API plans",
+          "url": "https://support.deepl.com/hc/en-us/articles/360021200939-DeepL-API-plans",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
@@ -7399,7 +7531,13 @@
       "category": "translation",
       "status": "never_free",
       "reason": "No free API keys ('not sustainable for us'); Pro from $29/mo. Self-hosting is free.",
-      "sources": [],
+      "sources": [
+        {
+          "title": "LibreTranslate portal",
+          "url": "https://portal.libretranslate.com/",
+          "accessed": "2026-10-01"
+        }
+      ],
       "noted": "2026-09-26"
     },
     {
