@@ -2111,10 +2111,10 @@ Official HTTP API doc lists model 'lite' (Spark Lite) as '轻量级大语言模�
 |:--|:--|:--|
 | GitHub Models | RETIRED. 'As of July 30, 2026, GitHub Models is now retired. The playground, model catalog, inference API, and bring your own key (BYOK) are no longer available to any customer, including e… | [source](https://github.blog/changelog/2026-07-30-github-models-is-now-retired/) |
 | Chutes.ai | Free 200 requests/day Early Access program was retired on 2026-03-15 ('no longer sustainable'); now subscription (Plus $10, Pro $20) or pay-as-you-go only. Pricing FAQ 'Is there a free tria… | [source](https://chutes.ai/news/community-announcement-february) |
-| Google Custom Search JSON API | 100 queries/day free but 'closed to new customers' and discontinued January 1, 2027. | — |
-| Bing Search APIs | Bing Search APIs were retired in August 2025. | — |
-| Perspective API (Jigsaw) | 'Perspective API is sunsetting and service is officially ending after 2026' (active until Dec 31, 2026). | — |
-| DeepL API Free | 'The DeepL API Free plan can no longer be purchased'; replacement 'DeepL API Developer' gives 1,000,000 characters in total (one-time). | — |
+| Google Custom Search JSON API | 100 queries/day free but 'closed to new customers' and discontinued January 1, 2027. | [source](https://developers.google.com/custom-search/v1/overview) |
+| Bing Search APIs | Bing Search APIs were retired in August 2025. | [source](https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement) |
+| Perspective API (Jigsaw) | 'Perspective API is sunsetting and service is officially ending after 2026' (active until Dec 31, 2026). | [source](https://perspectiveapi.com/) |
+| DeepL API Free | 'The DeepL API Free plan can no longer be purchased'; replacement 'DeepL API Developer' gives 1,000,000 characters in total (one-time). | [source](https://support.deepl.com/hc/en-us/articles/360021200939-DeepL-API-plans) |
 
 #### ⏳ One-time credits / time-limited trials
 
@@ -2140,23 +2140,23 @@ Official HTTP API doc lists model 'lite' (Spark Lite) as '轻量级大语言模�
 | Hyperbolic | Docs overview mentions no free credits, free tier or free rate limits. | [source](https://www.hyperbolic.ai/docs/overview/overview) |
 | Baseten | 'new Baseten accounts come with credits so you can get to know the UI and experiment for free' — unspecified one-time credits; Basic plan is pay-as-you-go. | [source](https://www.baseten.co/pricing/) |
 | Public AI Inference Utility (direct API) | 'Every new user account receives $2 of free starter credit, used for API calls at the listed per-token prices.' Rate limits 'depend on your plan tier' (Free/Plus/Pro/Enterprise; numbers on… | [source](https://platform.publicai.co/docs) |
-| Replicate 'Try for free' collection | Free only 'for a limited number of runs', then billing required (one-time). | — |
+| Replicate 'Try for free' collection | Free only 'for a limited number of runs', then billing required (one-time). | [source](https://replicate.com/collections/try-for-free) |
 | Prodia | 'your first 1000 API calls are free' (one-time), then $0.0025/generation. | — |
 | Segmind | No free credits; 'Recharge with as low as $10 to get started'. | — |
 | fal.ai | No free tier/signup credit found on official pricing docs (prepaid credits only). | — |
 | Stability AI Developer Platform | Sign-up credits are a one-time grant; no recurring free allowance is published. | — |
-| Deepgram | $200 credit with 'No expiration' and 'No credit card required' but it is a one-time signup credit, not recurring. Borderline - consider a separate 'one-time credits' section. | — |
-| AssemblyAI | 'up to 185 hours pre-recorded / 333 hours streaming' free with no reset period stated; consistent with a one-time $50 credit. | — |
-| Gladia | Pricing page: '50 EUR in free credits, a one-time grant with no monthly reset' (their blog claims 10 free hours/month - contradicted by pricing page). | — |
-| Speechmatics | '$100 credit to get started' one-time; no monthly allowance stated. | — |
-| Rev.ai | One-time free credits 'equivalent to 5 hours of Reverb ASR'. | — |
+| Deepgram | $200 credit with 'No expiration' and 'No credit card required' but it is a one-time signup credit, not recurring. Borderline - consider a separate 'one-time credits' section. | [source](https://deepgram.com/pricing) |
+| AssemblyAI | 'up to 185 hours pre-recorded / 333 hours streaming' free with no reset period stated; consistent with a one-time $50 credit. | [source](https://www.assemblyai.com/docs/faq/what-happens-when-i-have-used-all-of-my-free-tier-credits) |
+| Gladia | Pricing page: '50 EUR in free credits, a one-time grant with no monthly reset' (their blog claims 10 free hours/month - contradicted by pricing page). | [source](https://www.gladia.io/pricing) |
+| Speechmatics | '$100 credit to get started' one-time; no monthly allowance stated. | [source](https://www.speechmatics.com/pricing) |
+| Rev.ai | One-time free credits 'equivalent to 5 hours of Reverb ASR'. | [source](https://www.rev.ai/pricing) |
 | Unreal Speech | '250K characters' one-time allocation, not monthly. | — |
 | Voyage AI | 'first 200 million tokens' free per model (embeddings and rerankers) 'for every account' - one-time allocation, no reset stated. Very generous; borderline. | — |
-| Jina AI embeddings / reranker | 'Every new API key comes with 10M free tokens' (one-time); no key = blocked. | — |
-| Mixedbread | '$5 one-time credits', no card required; not recurring. | — |
+| Jina AI embeddings / reranker | 'Every new API key comes with 10M free tokens' (one-time); no key = blocked. | [source](https://jina.ai/reader/) |
+| Mixedbread | '$5 one-time credits', no card required; not recurring. | [source](https://www.mixedbread.com/pricing) |
 | Chroma Cloud | '$5 in credits to new users' one-time. | — |
 | Serper.dev | 2,500 free queries one-time; public pricing page reported 404 - could not be re-read from an official page. | — |
-| Unstructured | '10,000 free pages to start' one-time, no card. | — |
+| Unstructured | '10,000 free pages to start' one-time, no card. | [source](https://unstructured.io/pricing) |
 | Leonardo.Ai | No free API tier: docs prerequisites 'Purchase API Credits. API access is separate from free or web app subscriptions.' | [source](https://docs.leonardo.ai/docs/getting-started) |
 | Recraft | No free API units stated: 'API Units are prepaid and are purchased separately from subscription credits'; V4.1 Flash $0.007/image. | [source](https://www.recraft.ai/pricing) |
 | Reducto | One-time: 'Free $150 in free usage' / 'Standard accounts include 15,000 free credits'; 'After your free $150, standard rates apply.' | [source](https://reducto.ai/pricing) |
@@ -2180,16 +2180,16 @@ Official HTTP API doc lists model 'lite' (Spark Lite) as '轻量级大语言模�
 | Upstage Solar API | No free API tier for generative models; only 10 free Studio agent runs and beta features marked 'Free' with 'pricing may change'. | [source](https://www.upstage.ai/pricing/api) |
 | OpenAI API | No free tier. 'Complimentary daily tokens' (250K–1M / 2.5M–10M per day) exist only for organizations in paid usage Tiers 1–5 that opt in to sharing API inputs/outputs with OpenAI; OpenAI 'w… | [source](https://help.openai.com/en/articles/10306912-sharing-feedback-evaluation-and-fine-tuning-data-and-api-inputs-and-outputs-with-openai) |
 | Puter.js | 'User-Pays model, where users of your application cover their own AI costs'; 'No backend, no API keys, no configuration' — browser SDK, not a server-side key API. Per-user Puter allowance n… | [source](https://developer.puter.com/tutorials/free-llm-api/) |
-| Google Gemini API image generation (Nano Banana 2 / Imagen) | Free tier listed as 'Not available' for image generation models. | — |
-| Together AI FLUX.1 [schnell] Free | Model page says 'not available on Together's Serverless API' / 'Launching soon'; only free serverless model is a chat model (Prism-ML/Ternary-Bonsai-27B). | — |
-| Amazon Transcribe / Polly | AWS free tier is 12 months only | — |
-| Fish Audio s2.1-pro-free | $0 API model but 'Free access is available through November 30, 2026' (time-limited promo); requests may be used to improve models. | — |
-| Edge TTS | Unofficial/undocumented Microsoft endpoint; no official free tier - flag only. | — |
-| Nomic | No free embedding-API allowance found on official pricing/docs (Free plan = 'limited agent requests'). | — |
-| turbopuffer | No free tier; Launch plan from $16/month. | — |
-| Google Document AI | No free monthly allowance; billed from first page. | — |
-| Upstage Document Parse / OCR | No API free tier on pricing page (only 10 free Studio agent runs). | — |
-| LibreTranslate (hosted libretranslate.com) | No free API keys ('not sustainable for us'); Pro from $29/mo. Self-hosting is free. | — |
+| Google Gemini API image generation (Nano Banana 2 / Imagen) | Free tier listed as 'Not available' for image generation models. | [source](https://ai.google.dev/gemini-api/docs/pricing) |
+| Together AI FLUX.1 [schnell] Free | Model page says 'not available on Together's Serverless API' / 'Launching soon'; only free serverless model is a chat model (Prism-ML/Ternary-Bonsai-27B). | [source](https://docs.together.ai/docs/deprecations) |
+| Amazon Transcribe / Polly | AWS free tier is 12 months only | [source](https://aws.amazon.com/transcribe/pricing/) |
+| Fish Audio s2.1-pro-free | $0 API model but 'Free access is available through November 30, 2026' (time-limited promo); requests may be used to improve models. | [source](https://fish.audio/blog/s2-1-pro-free-api/) |
+| Edge TTS | Unofficial/undocumented Microsoft endpoint; no official free tier - flag only. | [source](https://github.com/rany2/edge-tts) |
+| Nomic | No free embedding-API allowance found on official pricing/docs (Free plan = 'limited agent requests'). | [source](https://www.nomic.ai/pricing) |
+| turbopuffer | No free tier; Launch plan from $16/month. | [source](https://turbopuffer.com/pricing) |
+| Google Document AI | No free monthly allowance; billed from first page. | [source](https://cloud.google.com/document-ai/pricing) |
+| Upstage Document Parse / OCR | No API free tier on pricing page (only 10 free Studio agent runs). | [source](https://www.upstage.ai/pricing) |
+| LibreTranslate (hosted libretranslate.com) | No free API keys ('not sustainable for us'); Pro from $29/mo. Self-hosting is free. | [source](https://portal.libretranslate.com/) |
 | Kagi Search API | No free tier: 'The API uses a pay-per-use model'; Search API $12/1k requests, Extract $4/1k pages. Only 'Kagi Small Web RSS Feed' is listed as Free. | [source](https://help.kagi.com/kagi/api/overview.html) |
 | MiniMax | No free credits/tier found on the fetched pricing page (Audio subscription starts at $5/month); text-model pricing page not reached. | [source](https://platform.minimax.io/docs/guides/pricing) |
 
