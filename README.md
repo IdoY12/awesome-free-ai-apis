@@ -500,7 +500,7 @@ Rate-limits page still lists a 'Free Tier' with 20 RPM, 20 RPD and 200,000 token
 
 ### 🇫🇷 [OVHcloud AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fovhcloud-ai-endpoints.json&cacheSeconds=3600) <sub>live: up · docs: broken</sub> <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fovhcloud-ai-endpoints.json&cacheSeconds=3600) <sub>live: up · docs: ok</sub> <sub>🟢 verified</sub>
 
 > **Anonymous: 2 RPM per IP per model, no signup; EU-hosted (Gravelines)**
 
@@ -693,7 +693,7 @@ Free plan: 'Free accounts include a starter amount of usage for a smaller set of
 
 ### 🇨🇳 [Z.ai (Zhipu GLM Flash)](https://z.ai/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fz-ai.json&cacheSeconds=3600) <sub>live: skipped · docs: broken</sub> <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fz-ai.json&cacheSeconds=3600) <sub>live: skipped · docs: ok</sub> <sub>🟡 partial</sub>
 
 > **GLM-4.7-Flash, GLM-4.5-Flash, GLM-4.6V-Flash priced Free on the international platform**
 
@@ -786,7 +786,7 @@ Free tier ('Default on signup'): 15 RPM, 20,000 TPM, 20,000 tokens/day. Pricing 
 
 ### 🇺🇸 [Kilo Gateway](https://kilo.ai/gateway)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fkilo-gateway.json&cacheSeconds=3600) <sub>live: up · docs: broken</sub> <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fkilo-gateway.json&cacheSeconds=3600) <sub>live: up · docs: ok</sub> <sub>🟢 verified</sub>
 
 > **No key needed: 200 req/hour per IP on `kilo-auto/free` and `:free` models (logged upstream)**
 
@@ -867,7 +867,7 @@ Anonymous: 1 RPS, 10 RPM, 60 requests/hour, 500,000 tokens per 24 hours. Free to
 
 ### 🇺🇸 [OpenCode Zen](https://opencode.ai/zen)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fopencode-zen.json&cacheSeconds=3600) <sub>live: skipped · docs: broken</sub> <sub>🟢 verified</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fopencode-zen.json&cacheSeconds=3600) <sub>live: skipped · docs: ok</sub> <sub>🟢 verified</sub>
 
 > **Rotating set of free (often stealth/preview) models; limits unpublished; free-period data may train**
 
@@ -2241,7 +2241,7 @@ data/providers.json ──▶ scripts/validate.mjs   (schema + sanity checks, ru
 - **Keyed probes** run only when the matching repository secret exists (`GROQ_API_KEY`, `GEMINI_API_KEY`, `MISTRAL_API_KEY`, `COHERE_API_KEY`, `SAMBANOVA_API_KEY`, `NVIDIA_API_KEY`, `HF_TOKEN`, `AION_API_KEY`, `ZAI_API_KEY`, `OLLAMA_API_KEY`, `OPENCODE_API_KEY`, `TAVILY_API_KEY`). Missing secret → badge says *unchecked*, never *down*.
 - **Docs pings** treat 403/429 (bot walls) as *unknown*, not *broken*. Only a 404/410/5xx marks docs as broken.
 - The bot never edits facts. Humans change `providers.json`; the bot only reports.
-- Last run: **2026-10-01 11:00 UTC** — 7 live, 0 down, 4 broken docs.
+- Last run: **2026-10-01 12:19 UTC** — 7 live, 0 down, 0 broken docs.
 
 Run it yourself:
 
