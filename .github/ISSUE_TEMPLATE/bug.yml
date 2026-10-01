@@ -1,0 +1,32 @@
+name: "🐞 Bug in the list, badges or scripts"
+description: A wrong status badge, a broken link, a rendering problem, or a script/CI failure
+labels: [bug]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where is the problem?
+      options:
+        - README rendering (table, anchor, formatting)
+        - Status badge shows the wrong state
+        - Broken or wrong link
+        - scripts/ (validate, build, verify, link check)
+        - GitHub Actions workflow
+        - Something else
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong?
+      description: Name the provider id or file if there is one. Paste the badge text, error message or log line you saw.
+      placeholder: "The badge for `kilo-gateway` says \"docs broken\" but https://kilo.ai/ loads fine…"
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+  - type: input
+    id: link
+    attributes:
+      label: Link to the line, badge or workflow run (optional)
+      placeholder: "https://github.com/IdoY12/awesome-free-ai-apis/…"
