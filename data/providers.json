@@ -1663,6 +1663,7 @@
       "category": "text_llm",
       "website": "https://kilo.ai/gateway",
       "api_key_url": "https://kilo.ai/",
+      "api_key_note": "Optional; anonymous access is allowed for free models.",
       "base_url": "https://api.kilo.ai/api/gateway",
       "openai_compatible": true,
       "country": "US",
@@ -1755,7 +1756,7 @@
         "type": "http",
         "url": "https://api.kilo.ai/api/gateway/models",
         "auth": "none",
-        "docs_url": "https://kilo.ai/ (optional; anonymous access allowed for free models)"
+        "docs_url": "https://kilo.ai/"
       },
       "region": "Varies (upstream)"
     },
@@ -1831,6 +1832,7 @@
       "category": "text_llm",
       "website": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/",
       "api_key_url": "https://www.ovh.com/manager/",
+      "api_key_note": "Public Cloud project > AI Endpoints > API keys; keys require a payment method on the project.",
       "base_url": "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
       "openai_compatible": true,
       "country": "FR",
@@ -2083,7 +2085,7 @@
         "url": "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
         "auth": "none",
         "model": "gpt-oss-20b",
-        "docs_url": "https://www.ovh.com/manager/ (Public Cloud project > AI Endpoints > API keys; keys require a payment method on the project)"
+        "docs_url": "https://www.ovh.com/manager/"
       },
       "region": "EU 🇫🇷 Gravelines"
     },
@@ -2093,6 +2095,7 @@
       "category": "text_llm",
       "website": "https://z.ai/",
       "api_key_url": "https://z.ai/manage-apikey/apikey-list",
+      "api_key_note": "International platform. China platform: https://open.bigmodel.cn/usercenter/apikeys",
       "base_url": "https://api.z.ai/api/paas/v4",
       "openai_compatible": true,
       "country": "CN",
@@ -2197,7 +2200,7 @@
         "url": "https://api.z.ai/api/paas/v4",
         "auth": "env:ZAI_API_KEY",
         "model": "glm-4.7-flash",
-        "docs_url": "https://z.ai/manage-apikey/apikey-list (international); https://open.bigmodel.cn/usercenter/apikeys (China)"
+        "docs_url": "https://z.ai/manage-apikey/apikey-list"
       },
       "region": "Singapore"
     },
@@ -2655,6 +2658,7 @@
       "category": "text_llm",
       "website": "https://opencode.ai/zen",
       "api_key_url": "https://opencode.ai/auth",
+      "api_key_note": "Sign in to OpenCode Zen, then copy the API key.",
       "base_url": "https://opencode.ai/zen/v1",
       "openai_compatible": true,
       "country": "US",
@@ -2708,7 +2712,7 @@
         "type": "openai_models",
         "url": "https://opencode.ai/zen/v1/models",
         "auth": "env:OPENCODE_API_KEY",
-        "docs_url": "https://opencode.ai/auth (sign in to OpenCode Zen, copy API key)"
+        "docs_url": "https://opencode.ai/auth"
       },
       "region": "US"
     },
@@ -3023,6 +3027,7 @@
       "category": "text_llm",
       "website": "https://xinghuo.xfyun.cn/sparkapi",
       "api_key_url": "https://console.xfyun.cn/",
+      "api_key_note": "The credential is called APIPassword in the console.",
       "base_url": "https://spark-api-open.xf-yun.com/v1",
       "openai_compatible": true,
       "country": "CN",
@@ -3077,7 +3082,7 @@
       "confidence": "partial",
       "probe": {
         "type": "docs",
-        "docs_url": "https://console.xfyun.cn/ (APIPassword)"
+        "docs_url": "https://console.xfyun.cn/"
       },
       "region": "China"
     },
