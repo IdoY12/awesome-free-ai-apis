@@ -1053,7 +1053,7 @@ Official pricing page lists 'Ling 3.0 Flash Fin' and 'Ling 3.0 Flash Sante' (inc
 
 ### 🇨🇳 [SiliconFlow (CN)](https://siliconflow.cn/)
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fsiliconflow.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟡 partial</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fsiliconflow.json&cacheSeconds=3600) <sub>live: n/a · docs: unknown</sub> <sub>🟡 partial</sub>
 
 > **Older 7B-class models (Qwen2 7B, GLM-4 9B…) free on the .cn platform; ID verification**
 
@@ -2241,7 +2241,7 @@ data/providers.json ──▶ scripts/validate.mjs   (schema + sanity checks, ru
 - **Keyed probes** run only when the matching repository secret exists (`GROQ_API_KEY`, `GEMINI_API_KEY`, `MISTRAL_API_KEY`, `COHERE_API_KEY`, `SAMBANOVA_API_KEY`, `NVIDIA_API_KEY`, `HF_TOKEN`, `AION_API_KEY`, `ZAI_API_KEY`, `OLLAMA_API_KEY`, `OPENCODE_API_KEY`, `TAVILY_API_KEY`). Missing secret → badge says *unchecked*, never *down*.
 - **Docs pings** treat 403/429 (bot walls) as *unknown*, not *broken*. Only a 404/410/5xx marks docs as broken.
 - The bot never edits facts. Humans change `providers.json`; the bot only reports.
-- Last run: **2026-10-01 12:28 UTC** — 7 live, 0 down, 0 broken docs.
+- Last run: **2026-10-01 12:35 UTC** — 7 live, 0 down, 0 broken docs.
 
 Run it yourself:
 
