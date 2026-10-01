@@ -9,7 +9,8 @@
     "validate": "node scripts/validate.mjs",
     "verify": "node scripts/verify.mjs",
     "build": "node scripts/build-readme.mjs",
-    "check": "npm run validate && npm run build"
+    "test": "node --test",
+    "check": "npm run validate && npm test && npm run build"
   },
   "repository": "github:IdoY12/awesome-free-ai-apis",
   "license": "CC0-1.0"

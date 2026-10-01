@@ -33,6 +33,7 @@ The README is **generated**. Never edit it by hand; edit `data/providers.json`.
 
    ```bash
    npm run validate   # schema + sanity checks
+   npm test           # unit tests for the validator and badge logic
    npm run build      # regenerates README.md
    ```
 

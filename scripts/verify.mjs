@@ -21,6 +21,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { badge, summaryBadge } from "./lib/badge.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const data = JSON.parse(readFileSync(join(root, "data/providers.json"), "utf8"));
@@ -97,23 +98,6 @@ async function checkLive(p) {
   }
 }
 
-// shields.io "endpoint" badge format: https://shields.io/badges/endpoint-badge
-function badge(live, docs) {
-  const map = {
-    up: ["live", "brightgreen"],
-    down: ["down", "red"],
-    auth: ["auth error", "orange"],
-    skipped: ["unchecked", "lightgrey"],
-    "n/a": ["docs only", "lightgrey"],
-  };
-  let [message, color] = map[live.state] || ["unknown", "lightgrey"];
-  if (live.state === "n/a" || live.state === "skipped") {
-    if (docs.state === "ok") [message, color] = ["docs ok", "green"];
-    else if (docs.state === "broken") [message, color] = ["docs broken", "red"];
-  }
-  return { schemaVersion: 1, label: "status", message, color };
-}
-
 const started = new Date().toISOString();
 const results = {};
 // Run in small parallel batches so a slow provider cannot stall the whole run.
@@ -140,8 +124,5 @@ const summary = {
 writeFileSync(join(root, "data/status.json"), JSON.stringify({ summary, results }, null, 2) + "\n");
 mkdirSync(join(root, "badges"), { recursive: true });
 for (const [id, r] of Object.entries(results)) writeFileSync(join(root, `badges/${id}.json`), JSON.stringify(badge(r.live, r.docs)) + "\n");
-writeFileSync(
-  join(root, "badges/_summary.json"),
-  JSON.stringify({ schemaVersion: 1, label: "live checks", message: `${summary.live_up} up · ${summary.live_down} down · ${summary.docs_broken} docs broken`, color: summary.live_down || summary.docs_broken ? "orange" : "brightgreen" }) + "\n"
-);
+writeFileSync(join(root, "badges/_summary.json"), JSON.stringify(summaryBadge(summary)) + "\n");
 console.log(`\n${summary.live_up} live, ${summary.live_down} down, ${summary.docs_broken} broken docs (${summary.providers} providers)`);

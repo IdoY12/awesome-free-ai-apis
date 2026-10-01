@@ -5,6 +5,8 @@ on:
     paths:
       - "data/**"
       - "scripts/**"
+      - "test/**"
+      - "package.json"
       - "README.md"
 
 jobs:
@@ -18,6 +20,9 @@ jobs:
 
       - name: Schema + sanity checks
         run: node scripts/validate.mjs
+
+      - name: Unit tests
+        run: node --test
 
       - name: README is generated from data
         run: |
