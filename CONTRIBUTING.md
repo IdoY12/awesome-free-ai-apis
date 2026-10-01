@@ -51,6 +51,10 @@ The README is **generated**. Never edit it by hand; edit `data/providers.json`.
 | `region` | Short label for tables (`US`, `EU 🇫🇷 Gravelines`, `Varies (upstream)`…); put the full statement in `hosting_regions`. |
 | `probe` | How the daily bot checks it: `openai_models`, `openai_chat`, `http`, or `docs` (page ping only). |
 
+## Dead links
+
+A weekly workflow (`links`) requests every website, key page and source URL in the dataset and fails when one is gone. To run it yourself: `npm run links`. If a cited page moved, update the URL and its `accessed` date; if the statement itself disappeared, treat it as a limit change.
+
 ## Reporting a change you can't fully verify
 
 Open an issue with the "Limit changed / provider update" template. Partial evidence (a console screenshot, an email from support) is welcome there — we'll mark the entry `partial` or move it to **Help wanted** until an official page confirms it.

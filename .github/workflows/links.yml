@@ -1,0 +1,33 @@
+name: links
+
+on:
+  schedule:
+    - cron: "41 5 * * 1" # Mondays, 05:41 UTC
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "scripts/check-links.mjs"
+      - "scripts/lib/links.mjs"
+      - ".github/workflows/links.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: links-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check every cited URL
+        # Pull requests only prove the checker runs; pre-existing dead links fail the scheduled run instead.
+        run: node scripts/check-links.mjs ${{ github.event_name == 'pull_request' && '--report-only' || '' }}
