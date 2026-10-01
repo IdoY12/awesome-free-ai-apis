@@ -68,4 +68,4 @@ Open an issue with the "Limit changed / provider update" template. Partial evide
 
 ## Code of conduct
 
-Be kind, assume good faith, cite sources. Disagreements about whether something counts as "permanent" get settled by the provider's own wording.
+Be kind, assume good faith, cite sources. Disagreements about whether something counts as "permanent" get settled by the provider's own wording. The full text is in [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).

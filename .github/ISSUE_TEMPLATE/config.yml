@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "📖 How entries are verified"
+    url: https://github.com/IdoY12/awesome-free-ai-apis/blob/main/CONTRIBUTING.md
+    about: What counts as a permanent free tier, and which sources are accepted. Worth a read before suggesting a provider.
