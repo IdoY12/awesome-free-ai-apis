@@ -10,7 +10,7 @@
 
 ## Checklist
 
-- [ ] I edited `data/providers.json` (not README.md) and ran `npm run build`
+- [ ] I edited `data/providers.json` (not README.md or docs/) and committed the output of `npm run build`
 - [ ] `npm run validate` passes
 - [ ] The free tier is **permanent** (renews; not a one-time credit or trial) — or this PR adds it to the graveyard
 - [ ] `last_verified` / `accessed` dates are today's

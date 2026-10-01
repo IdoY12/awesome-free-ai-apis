@@ -18,7 +18,7 @@ The Graveyard is a first-class part of the list — adding an entry there is jus
 
 ## How to add or update a provider
 
-The README is **generated**. Never edit it by hand; edit `data/providers.json`.
+`README.md` and everything under `docs/` are **generated**. Never edit them by hand; edit `data/providers.json`.
 
 1. Fork and clone.
 2. Add or edit the entry in `data/providers.json`. Copy an existing entry of the same `category` as a template; `data/schema.json` documents every field.
@@ -34,16 +34,16 @@ The README is **generated**. Never edit it by hand; edit `data/providers.json`.
    ```bash
    npm run validate   # schema + sanity checks
    npm test           # unit tests for the validator and badge logic
-   npm run build      # regenerates README.md
+   npm run build      # regenerates README.md and docs/
    ```
 
-8. Open a PR. The template asks for the source links; CI re-runs validation and checks that the README matches the data.
+8. Commit the regenerated files together with your data change and open a PR. The template asks for the source links; CI re-runs validation and checks that `README.md` and `docs/` match the data.
 
 ## Field cheat-sheet
 
 | Field | Meaning |
 |:--|:--|
-| `free_tier.headline` | One line, ≤160 chars, the numbers a developer scans for. Appears in the tables. |
+| `free_tier.headline` | One line, ≤160 chars, the numbers a developer scans for. This is what the README table shows; everything else goes on the provider's page under `docs/providers/`. |
 | `free_tier.limits` | Full published limits, with units (RPM/RPD/TPM/TPD, chars/month, credits/month…). |
 | `policy.trains_on_your_data` | For **free-tier API** traffic specifically: `yes` / `no` / `opt-out` / `unclear`. Quote the clause in `training_note`. |
 | `policy.commercial_use` | Whether free-tier output may be used commercially / in production. |

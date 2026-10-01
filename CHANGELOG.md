@@ -2,6 +2,13 @@
 
 All notable changes to the dataset. Daily bot commits (status + badges) are not listed.
 
+## Unreleased
+
+- README restructured: one short table per category. Per-provider limits, model tables, notes and sources moved to `docs/providers/<id>.md`; graveyard, compliance matrix, help-wanted list and verification notes moved to `docs/`. No data removed.
+- 23 graveyard entries gained an official source link.
+- Fixed false "docs broken" badges (prose in `probe.docs_url`); the validator now enforces `maxLength` and bare URLs.
+- Added unit tests, a weekly link check, a bug-report template and a Code of Conduct.
+
 ## 1.0.0 — 2026-09-26
 
 Initial release.

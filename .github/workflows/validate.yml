@@ -8,6 +8,7 @@ on:
       - "test/**"
       - "package.json"
       - "README.md"
+      - "docs/**"
 
 jobs:
   validate:
@@ -24,12 +25,13 @@ jobs:
       - name: Unit tests
         run: node --test
 
-      - name: README is generated from data
+      - name: README and docs are generated from data
         run: |
           node scripts/build-readme.mjs
-          if ! git diff --quiet -- README.md; then
-            echo "::error::README.md is out of date. Run 'npm run build' and commit the result."
-            git --no-pager diff --stat -- README.md
+          if [ -n "$(git status --porcelain -- README.md docs)" ]; then
+            echo "::error::README.md or docs/ is out of date. Run 'npm run build' and commit the result."
+            git status --short -- README.md docs
+            git --no-pager diff --stat -- README.md docs
             exit 1
           fi
 
