@@ -82,6 +82,7 @@
         },
         "website": { "type": "string", "pattern": "^https?://" },
         "api_key_url": { "type": ["string", "null"] },
+        "api_key_note": { "type": ["string", "null"] },
         "base_url": { "type": ["string", "null"] },
         "base_url_note": { "type": ["string", "null"] },
         "openai_compatible": { "type": ["boolean", "string", "null"] },
