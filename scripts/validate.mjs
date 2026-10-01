@@ -2,7 +2,7 @@
 /**
  * Validates data/providers.json against data/schema.json.
  * Zero dependencies: implements the subset of JSON Schema the dataset uses
- * (type, required, enum, pattern, properties, items, minItems, $ref, additional sanity checks).
+ * (type, required, enum, pattern, maxLength, properties, items, minItems, $ref, additional sanity checks).
  */
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -32,6 +32,8 @@ function validate(node, value, path) {
   if (node.enum && !node.enum.includes(value)) errors.push(`${path}: "${value}" not in [${node.enum.join(", ")}]`);
   if (node.pattern && typeof value === "string" && !new RegExp(node.pattern).test(value))
     errors.push(`${path}: "${value}" does not match ${node.pattern}`);
+  if (node.maxLength != null && typeof value === "string" && [...value].length > node.maxLength)
+    errors.push(`${path}: ${[...value].length} characters, max ${node.maxLength}`);
   if (node.required && value && typeof value === "object")
     for (const k of node.required) if (!(k in value)) errors.push(`${path}: missing required "${k}"`);
   if (node.properties && value && typeof value === "object")

@@ -6946,8 +6946,8 @@
       "reason": "Only a small sign-up trial credit (~$1 per third-party reviews; no official pricing page states it). Trial only.",
       "sources": [
         {
-          "title": "source",
-          "url": "https://pricepertoken.com/endpoints/nebius/free (third-party; no official statement found)"
+          "title": "third-party; no official statement found",
+          "url": "https://pricepertoken.com/endpoints/nebius/free"
         }
       ],
       "noted": "2026-09-26"
@@ -7057,8 +7057,8 @@
       "reason": "Only promotional/trial balances ('varies by account'); no permanent free tier documented.",
       "sources": [
         {
-          "title": "source",
-          "url": "https://deepinfra.com (no free-tier statement found)"
+          "title": "no free-tier statement found",
+          "url": "https://deepinfra.com"
         }
       ],
       "noted": "2026-09-26"
