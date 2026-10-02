@@ -2,7 +2,7 @@
 
 [← All providers](../../README.md#-text--chat-llms) · 💬 Text & chat LLMs
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fovhcloud-ai-endpoints.json&cacheSeconds=3600) <sub>live: up · docs: ok</sub> <sub>🟢 verified · last verified 2026-09-26</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fovhcloud-ai-endpoints.json&cacheSeconds=3600) <sub>live: down · docs: ok</sub> <sub>🟢 verified · last verified 2026-09-26</sub>
 
 > **Anonymous: 2 RPM per IP per model, no signup; EU-hosted (Gravelines)**
 

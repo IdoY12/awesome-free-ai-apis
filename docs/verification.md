@@ -18,7 +18,7 @@ data/providers.json ──▶ scripts/validate.mjs      schema + sanity checks, 
 - **Docs pings** treat 401/403/429 (login and bot walls) as *unknown*, not *broken*. Only a real 4xx such as 404 marks docs as broken.
 - **Link check**: once a week every website, key page and source URL in the dataset is requested; a dead link fails the run.
 - The bot never edits facts. Humans change `providers.json`; the bot only reports.
-- Last run: **2026-10-02 09:56 UTC**: 7 live, 0 down, 0 broken docs.
+- Last run: **2026-10-02 10:33 UTC**: 6 live, 1 down, 0 broken docs.
 
 ## Run it yourself
 
