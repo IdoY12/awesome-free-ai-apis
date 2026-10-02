@@ -4,29 +4,53 @@ labels: [provider, needs-verification]
 body:
   - type: input
     id: name
-    attributes: { label: Provider name, placeholder: "Acme AI" }
-    validations: { required: true }
+    attributes:
+      label: Provider name
+      placeholder: "Acme AI"
+    validations:
+      required: true
   - type: dropdown
     id: category
     attributes:
       label: Category
-      options: [text_llm, image_generation, stt, tts, embeddings, reranking, vector_db, web_search, ocr_document, moderation, translation, vision_other]
-    validations: { required: true }
+      options:
+        - text_llm
+        - image_generation
+        - stt
+        - tts
+        - embeddings
+        - reranking
+        - vector_db
+        - web_search
+        - ocr_document
+        - moderation
+        - translation
+        - vision_other
+    validations:
+      required: true
   - type: input
     id: limits_url
-    attributes: { label: Official page stating the free-tier limits (rate-limit / pricing page), placeholder: "https://…" }
-    validations: { required: true }
+    attributes:
+      label: "Official page stating the free-tier limits (rate-limit / pricing page)"
+      placeholder: "https://…"
+    validations:
+      required: true
   - type: textarea
     id: limits
-    attributes: { label: The limits, as written on that page, placeholder: "30 RPM, 1,000 RPD, resets daily…" }
-    validations: { required: true }
+    attributes:
+      label: "The limits, as written on that page"
+      placeholder: "30 RPM, 1,000 RPD, resets daily…"
+    validations:
+      required: true
   - type: checkboxes
     id: permanent
     attributes:
       label: Permanence check
       options:
-        - label: The allowance renews (daily/weekly/monthly) for as long as the account exists — it is not a one-time credit or a time-limited trial.
+        - label: "The allowance renews (daily/weekly/monthly) for as long as the account exists — it is not a one-time credit or a time-limited trial."
           required: true
   - type: input
     id: terms_url
-    attributes: { label: Terms / privacy page covering training on API data (optional), placeholder: "https://…" }
+    attributes:
+      label: "Terms / privacy page covering training on API data (optional)"
+      placeholder: "https://…"
