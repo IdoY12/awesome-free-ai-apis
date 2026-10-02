@@ -4,17 +4,24 @@ labels: [update, needs-verification]
 body:
   - type: input
     id: provider
-    attributes: { label: Provider id (from data/providers.json), placeholder: "groq" }
-    validations: { required: true }
+    attributes:
+      label: "Provider id (from data/providers.json)"
+      placeholder: "groq"
+    validations:
+      required: true
   - type: textarea
     id: what
     attributes:
       label: What changed?
       placeholder: "RPD dropped from 1,000 to 500 on 2026-10-01…"
-    validations: { required: true }
+    validations:
+      required: true
   - type: input
     id: source
-    attributes: { label: Official source (page, changelog, email from the provider), placeholder: "https://…" }
+    attributes:
+      label: "Official source (page, changelog, email from the provider)"
+      placeholder: "https://…"
   - type: textarea
     id: evidence
-    attributes: { label: Other evidence (console screenshot, error message) }
+    attributes:
+      label: "Other evidence (console screenshot, error message)"
