@@ -2,7 +2,7 @@
 
 [← All providers](../../README.md#-text--chat-llms) · 💬 Text & chat LLMs
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fsiliconflow.json&cacheSeconds=3600) <sub>live: n/a · docs: unknown</sub> <sub>🟡 partial · last verified 2026-09-26</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fsiliconflow.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟡 partial · last verified 2026-09-26</sub>
 
 > **Older 7B-class models (Qwen2 7B, GLM-4 9B…) free on the .cn platform; ID verification**
 
