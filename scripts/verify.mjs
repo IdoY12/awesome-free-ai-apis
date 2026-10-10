@@ -6,7 +6,8 @@
  *   1. docs  — the official key/pricing page still answers (HEAD/GET, any 2xx/3xx = ok)
  *   2. live  — a real API call:
  *        openai_models : GET  {url}            -> expects JSON with a `data` array
- *        openai_chat   : POST {url}/chat/completions with a 1-token prompt
+ *        openai_chat   : POST {url}/chat/completions with a 5-token prompt
+ *                        (reasoning-only replies count as up, see lib/probe.mjs)
  *        http          : GET  {url}            -> expects 2xx
  *      Keyless probes always run. Keyed probes run only when the named env var
  *      (repository secret) is present; otherwise the check is reported as "skipped",
@@ -22,6 +23,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { badge, summaryBadge } from "./lib/badge.mjs";
+import { classifyChat } from "./lib/probe.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const data = JSON.parse(readFileSync(join(root, "data/providers.json"), "utf8"));
@@ -89,8 +91,7 @@ async function checkLive(p) {
       if (res.status === 429) return { state: "up", detail: "HTTP 429 (rate limited, endpoint alive)" };
       if (!res.ok) return { state: res.status === 401 || res.status === 403 ? "auth" : "down", detail: `HTTP ${res.status}` };
       const body = await res.json().catch(() => null);
-      const text = body?.choices?.[0]?.message?.content;
-      return text != null ? { state: "up", detail: `chat ok (${model})` } : { state: "down", detail: "no completion in response" };
+      return classifyChat(body, model);
     }
     return { state: "skipped", detail: `unknown probe type ${type}` };
   } catch (e) {
