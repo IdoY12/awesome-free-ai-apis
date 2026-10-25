@@ -2,7 +2,7 @@
 
 [← All providers](../../README.md#-text-to-speech) · 🔊 Text-to-speech
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fazure-ai-speech-tts.json&cacheSeconds=3600) <sub>live: n/a · docs: unknown</sub> <sub>🟢 verified · last verified 2026-09-26</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fazure-ai-speech-tts.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟢 verified · last verified 2026-09-26</sub>
 
 > **F0: 500K neural-TTS characters/month, 20 transactions/min**
 
