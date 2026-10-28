@@ -2,7 +2,7 @@
 
 [← All providers](../../README.md#-text--chat-llms) · 💬 Text & chat LLMs
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fnlp-cloud.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟡 partial · last verified 2026-09-26</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fnlp-cloud.json&cacheSeconds=3600) <sub>live: n/a · docs: unknown</sub> <sub>🟡 partial · last verified 2026-09-26</sub>
 
 > **Free plan for testing only ("must not be used in production"); limits unpublished**
 
