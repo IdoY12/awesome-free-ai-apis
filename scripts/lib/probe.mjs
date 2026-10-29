@@ -17,3 +17,30 @@ export function classifyChat(body, model) {
   }
   return { state: "down", detail: "no completion in response" };
 }
+
+/**
+ * Decides whether a live-probe result is worth one more attempt.
+ *
+ * A single timeout, connection reset or 5xx says more about the network at
+ * the moment of the probe than about the provider. The daily run has no
+ * second chance, so one such miss used to flip a badge to "down" for a day.
+ */
+export function isTransient(result) {
+  if (!result || result.state !== "down") return false;
+  const d = String(result.detail || "");
+  return d === "timeout" || /^HTTP 5\d\d$/.test(d) || /fetch failed|ECONN|ENOTFOUND|EAI_AGAIN|socket/i.test(d);
+}
+
+/**
+ * Runs `probe` and, if the result looks transient, waits `delayMs` and runs
+ * it once more. The second result wins either way; `detail` notes the retry
+ * so the status page shows which outages survived two attempts.
+ */
+export async function probeWithRetry(probe, { delayMs = 2000, sleep = (ms) => new Promise((r) => setTimeout(r, ms)) } = {}) {
+  const first = await probe();
+  if (!isTransient(first)) return first;
+  await sleep(delayMs);
+  const second = await probe();
+  if (second.state === "down") return { ...second, detail: `${second.detail} (after retry)` };
+  return second;
+}

@@ -7,7 +7,8 @@
  *   2. live  — a real API call:
  *        openai_models : GET  {url}            -> expects JSON with a `data` array
  *        openai_chat   : POST {url}/chat/completions with a 5-token prompt
- *                        (reasoning-only replies count as up, see lib/probe.mjs)
+ *                        (reasoning-only replies count as up; a single timeout,
+ *                        5xx or network error is retried once, see lib/probe.mjs)
  *        http          : GET  {url}            -> expects 2xx
  *      Keyless probes always run. Keyed probes run only when the named env var
  *      (repository secret) is present; otherwise the check is reported as "skipped",
@@ -23,7 +24,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { badge, summaryBadge } from "./lib/badge.mjs";
-import { classifyChat } from "./lib/probe.mjs";
+import { classifyChat, probeWithRetry } from "./lib/probe.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const data = JSON.parse(readFileSync(join(root, "data/providers.json"), "utf8"));
@@ -107,7 +108,7 @@ for (let i = 0; i < data.providers.length; i += batch) {
   const slice = data.providers.slice(i, i + batch);
   await Promise.all(
     slice.map(async (p) => {
-      const [docs, live] = await Promise.all([checkDocs(p.probe.docs_url), checkLive(p)]);
+      const [docs, live] = await Promise.all([checkDocs(p.probe.docs_url), probeWithRetry(() => checkLive(p))]);
       results[p.id] = { name: p.name, category: p.category, checked_at: started, docs, live };
       console.log(`${p.id.padEnd(36)} docs=${docs.state.padEnd(8)} live=${live.state.padEnd(8)} ${live.detail}`);
     })
