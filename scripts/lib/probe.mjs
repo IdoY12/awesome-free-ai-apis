@@ -26,9 +26,34 @@ export function classifyChat(body, model) {
  * second chance, so one such miss used to flip a badge to "down" for a day.
  */
 export function isTransient(result) {
-  if (!result || result.state !== "down") return false;
+  if (!result || (result.state !== "down" && result.state !== "unknown")) return false;
   const d = String(result.detail || "");
   return d === "timeout" || /^HTTP 5\d\d$/.test(d) || /fetch failed|ECONN|ENOTFOUND|EAI_AGAIN|socket/i.test(d);
+}
+
+/**
+ * Turns the HTTP status of a docs-page check into a result.
+ *
+ * 401/403 are login walls or bot protection and 429 is rate limiting; none of
+ * them says the page is gone, so they are "unknown" rather than "broken",
+ * each with a detail that names the actual cause.
+ */
+export function classifyDocsStatus(status) {
+  if (status === 401 || status === 403) return { state: "unknown", detail: `HTTP ${status} (login wall or bot protection)` };
+  if (status === 429) return { state: "unknown", detail: `HTTP ${status} (rate limited)` };
+  if (status >= 200 && status < 300) return { state: "ok", detail: `HTTP ${status}` };
+  return { state: "broken", detail: `HTTP ${status}` };
+}
+
+/**
+ * Describes a fetch error for the status page. Node's `fetch` hides the real
+ * reason ("fetch failed") behind `error.cause`, so the cause's code is appended.
+ */
+export function describeFetchError(e) {
+  if (e?.name === "AbortError") return "timeout";
+  const msg = String(e?.message || e);
+  const code = e?.cause?.code;
+  return code && !msg.includes(code) ? `${msg} (${code})` : msg;
 }
 
 /**
@@ -41,6 +66,6 @@ export async function probeWithRetry(probe, { delayMs = 2000, sleep = (ms) => ne
   if (!isTransient(first)) return first;
   await sleep(delayMs);
   const second = await probe();
-  if (second.state === "down") return { ...second, detail: `${second.detail} (after retry)` };
+  if (isTransient(second)) return { ...second, detail: `${second.detail} (after retry)` };
   return second;
 }

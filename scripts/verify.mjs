@@ -24,7 +24,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { badge, summaryBadge } from "./lib/badge.mjs";
-import { classifyChat, probeWithRetry } from "./lib/probe.mjs";
+import { classifyChat, classifyDocsStatus, describeFetchError, probeWithRetry } from "./lib/probe.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const data = JSON.parse(readFileSync(join(root, "data/providers.json"), "utf8"));
@@ -52,11 +52,9 @@ async function checkDocs(url) {
   try {
     let res = await fetchWithTimeout(url, { method: "HEAD", redirect: "follow" });
     if (res.status === 405 || res.status === 403 || res.status === 404) res = await fetchWithTimeout(url, { method: "GET", redirect: "follow" });
-    // Bot walls (403/429) are not evidence the page is gone — report as unknown, not broken.
-    if ([401, 403, 429].includes(res.status)) return { state: "unknown", detail: `HTTP ${res.status} (login wall or bot protection)` };
-    return res.ok ? { state: "ok", detail: `HTTP ${res.status}` } : { state: "broken", detail: `HTTP ${res.status}` };
+    return classifyDocsStatus(res.status);
   } catch (e) {
-    return { state: "unknown", detail: e.name === "AbortError" ? "timeout" : String(e.message || e) };
+    return { state: "unknown", detail: describeFetchError(e) };
   }
 }
 
@@ -108,7 +106,7 @@ for (let i = 0; i < data.providers.length; i += batch) {
   const slice = data.providers.slice(i, i + batch);
   await Promise.all(
     slice.map(async (p) => {
-      const [docs, live] = await Promise.all([checkDocs(p.probe.docs_url), probeWithRetry(() => checkLive(p))]);
+      const [docs, live] = await Promise.all([probeWithRetry(() => checkDocs(p.probe.docs_url)), probeWithRetry(() => checkLive(p))]);
       results[p.id] = { name: p.name, category: p.category, checked_at: started, docs, live };
       console.log(`${p.id.padEnd(36)} docs=${docs.state.padEnd(8)} live=${live.state.padEnd(8)} ${live.detail}`);
     })

@@ -9,6 +9,7 @@ All notable changes to the dataset. Daily bot commits (status + badges) are not 
 - Fixed false "docs broken" badges (prose in `probe.docs_url`); the validator now enforces `maxLength` and bare URLs.
 - Verifier: a reasoning model that spends the whole probe budget on reasoning (`content: null`) is no longer reported as down.
 - Verifier: a live probe that times out, hits a 5xx or a network error is retried once before the provider is reported down.
+- Verifier: the docs-page check is retried the same way; a 429 is now reported as "rate limited" instead of a login wall, and network errors show their cause (e.g. `fetch failed (ENOTFOUND)`).
 - Added unit tests, a weekly link check, a bug-report template and a Code of Conduct.
 
 ## 1.0.0 — 2026-09-26

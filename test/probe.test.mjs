@@ -25,12 +25,14 @@ test("a 200 without a usable choice is down", () => {
   assert.equal(state(reply({ role: "assistant", content: null })), "down");
 });
 
-import { isTransient, probeWithRetry } from "../scripts/lib/probe.mjs";
+import { isTransient, probeWithRetry, classifyDocsStatus, describeFetchError } from "../scripts/lib/probe.mjs";
 
 test("only timeouts, 5xx and network errors are transient", () => {
   assert.equal(isTransient({ state: "down", detail: "timeout" }), true);
   assert.equal(isTransient({ state: "down", detail: "HTTP 503" }), true);
   assert.equal(isTransient({ state: "down", detail: "fetch failed" }), true);
+  assert.equal(isTransient({ state: "unknown", detail: "fetch failed (ENOTFOUND)" }), true);
+  assert.equal(isTransient({ state: "unknown", detail: "HTTP 403 (login wall or bot protection)" }), false);
   assert.equal(isTransient({ state: "down", detail: "HTTP 404" }), false);
   assert.equal(isTransient({ state: "down", detail: "no completion in response" }), false);
   assert.equal(isTransient({ state: "auth", detail: "HTTP 401" }), false);
@@ -57,4 +59,26 @@ test("a definite result is not retried", async () => {
   const res = await probeWithRetry(probe, { sleep: async () => {} });
   assert.deepEqual(res, { state: "down", detail: "HTTP 404" });
   assert.equal(calls, 1);
+});
+
+test("docs checks tell login walls, rate limits and dead pages apart", () => {
+  assert.equal(classifyDocsStatus(200).state, "ok");
+  assert.equal(classifyDocsStatus(404).state, "broken");
+  assert.match(classifyDocsStatus(403).detail, /login wall/);
+  assert.match(classifyDocsStatus(429).detail, /rate limited/);
+  assert.equal(classifyDocsStatus(429).state, "unknown");
+  assert.equal(classifyDocsStatus(500).state, "broken");
+});
+
+test("a fetch error keeps its underlying cause", () => {
+  assert.equal(describeFetchError({ name: "AbortError" }), "timeout");
+  assert.equal(describeFetchError({ message: "fetch failed", cause: { code: "ENOTFOUND" } }), "fetch failed (ENOTFOUND)");
+  assert.equal(describeFetchError({ message: "connect ECONNRESET", cause: { code: "ECONNRESET" } }), "connect ECONNRESET");
+  assert.equal(describeFetchError(new Error("boom")), "boom");
+});
+
+test("a docs check that fails twice on the network says so", async () => {
+  const probe = async () => ({ state: "unknown", detail: "fetch failed (ECONNRESET)" });
+  const res = await probeWithRetry(probe, { sleep: async () => {} });
+  assert.deepEqual(res, { state: "unknown", detail: "fetch failed (ECONNRESET) (after retry)" });
 });
