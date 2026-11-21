@@ -2,7 +2,7 @@
 
 [← All providers](../../README.md#-moderation--safety) · 🛡️ Moderation & safety
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fopenai-moderation.json&cacheSeconds=3600) <sub>live: n/a · docs: unknown</sub> <sub>🟡 partial · last verified 2026-09-26</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fopenai-moderation.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟡 partial · last verified 2026-09-26</sub>
 
 > **Moderation endpoint free for any OpenAI API account (needs an OpenAI key)**
 
