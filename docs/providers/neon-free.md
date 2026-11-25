@@ -2,7 +2,7 @@
 
 [← All providers](../../README.md#-vector-databases) · 🗄️ Vector databases
 
-![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fneon-free.json&cacheSeconds=3600) <sub>live: n/a · docs: broken</sub> <sub>🟢 verified · last verified 2026-09-26</sub>
+![status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FIdoY12%2Fawesome-free-ai-apis%2Fmain%2Fbadges%2Fneon-free.json&cacheSeconds=3600) <sub>live: n/a · docs: ok</sub> <sub>🟢 verified · last verified 2026-09-26</sub>
 
 > **Postgres + pgvector: 100 projects, 0.5 GB each, 100 CU-hours/month**
 
